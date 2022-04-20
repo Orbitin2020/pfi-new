@@ -127,12 +127,13 @@ class ArtikelController extends Controller
             $extension = $gambar->getClientOriginalExtension();
             $name = $request->input('nama').'.'.$extension;
             $path = public_path().'/image/artikel';
+            $upload = $gambar->move($path,$name);
             
-            $img = Image::make($gambar->path());
+            // $img = Image::make($gambar->path());
 
-            $img->resize(683, 468, function ($constraint) {
-                $constraint->aspectRatio();
-            })->save($path.'/'.$name);
+            // $img->resize(683, 468, function ($constraint) {
+            //     $constraint->aspectRatio();
+            // })->save($path.'/'.$name);
 
             $artikel = Artikel::find($id)->update([
                 'judul'     => $request->input('judul'),
