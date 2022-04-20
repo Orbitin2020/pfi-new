@@ -29,7 +29,7 @@
                     <a class=" font-w700" href="javascript:void(0)">
                         {{-- <img src="{{asset('assets/media/favicons/favicon2.png')}}" alt="" style="max-height: 45%"> --}}
                         {{-- <img class="" src="{{asset('assets/media/favicons/ugl1.png')}}" alt="" style="max-height: 30px"> --}}
-                        <span class="font-size-xl text-dual-primary-dark">Ap</span><span class="font-size-xl text-primary">rce</span>
+                        <span class="font-size-xl text-dual-primary-dark">PFI</span><span class="font-size-xl text-primary">CMS</span>
                     </a>
                 </div>
                 <!-- END Logo -->
@@ -80,34 +80,33 @@
             <!-- END Visible only in normal mode -->
         </div>
         <!-- END Side User -->
-        {{-- <div class="content-side content-side-full">
+        <div class="content-side content-side-full">
             <ul class="nav-main">
                 <li>
-                    <a href=""><i class="si si-bar-chart"></i><span
-                            class="sidebar-mini-hide">Dashboard</span></a>
+                    <a class="active"><i class="si si-home"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                 </li>
                 <li>
-                    <a href="{{route('admin.speaker.index')}}"><i class="si si-users"></i><span
-                            class="sidebar-mini-hide">List Speaker</span></a>
+                  <a href={{route('admin.artikel.index')}} class="active"><i class="fa fa-newspaper-o"></i><span class="sidebar-mini-hide">News</span></a>
                 </li>
+                {{-- <li>
+                  <a class="nav-submenu active" data-toggle="nav-submenu"><i class="fa fa-file-image-o"></i><span class="sidebar-mini-hide">Galeri</span></a>
+                  <ul>
+                      <li>
+                          <a href="{{route('galeri.category.index')}}">Image Category</a>
+                      </li>
+                      <li>
+                          <a href="{{route('galeri.index')}}">Image</a>
+                      </li>
+                  </ul>
+                </li> --}}
+                @hasrole('super-admin')
                 <li>
-                    <a href="{{route('admin.schedule.index')}}"><i class="si si-calendar"></i><span
-                            class="sidebar-mini-hide">Schedule</span></a>
+                  <a href={{route('user.index')}} class="active"><i class="fa fa-user"></i><span class="sidebar-mini-hide">Manajemen User Admin</span></a>
                 </li>
-                <li>
-                    <a href="{{route('admin.tiket.index')}}"><i class="fa fa-ticket"></i><span
-                            class="sidebar-mini-hide">Tiket</span></a>
-                </li>
-                <li>
-                    <a href="{{route('admin.sponsor.index')}}"><i class="fa fa-dollar"></i><span
-                            class="sidebar-mini-hide">Sponsor</span></a>
-                </li>
-                <li>
-                    <a href="{{route('admin.registrasi')}}"><i class="si si-user"></i><span
-                            class="sidebar-mini-hide">Daftar User Registrasi</span></a>
-                </li>
+                @else
+                @endhasrole
             </ul>
-        </div> --}}
+        </div>
         <!-- END Side Navigation -->
         
     </div>

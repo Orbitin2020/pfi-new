@@ -1,26 +1,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-<title>APRCE 2022</title>
+<title>PFI Admin</title>
 
-<meta name="description" content="APRCE">
-<meta name="author" content="APRCE">
+<meta name="description" content="PFI">
+<meta name="author" content="PFI">
 <meta name="robots" content="noindex, nofollow">
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 
 <!-- Open Graph Meta -->
-<meta property="og:title" content="APRCE">
-<meta property="og:site_name" content="APRCE">
-<meta property="og:description" content="APRCE">
+<meta property="og:title" content="PFI">
+<meta property="og:site_name" content="PFI">
+<meta property="og:description" content="PFI">
 <meta property="og:type" content="website">
 <meta property="og:url" content="">
 <meta property="og:image" content="">
 
 <!-- Icons -->
 <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-<link rel="shortcut icon" href="{{asset('assets/media/aprce/aprce-favicon.png')}}">
-<link rel="icon" type="image/png" sizes="192x192" href="{{asset('assets/media/aprce/aprce-favicon.ico')}}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/media/aprce/aprce-apple.png')}}">
+<link rel="shortcut icon" href="">
+<link rel="icon" type="image/png" sizes="192x192" href="">
+<link rel="apple-touch-icon" sizes="180x180" href="">
 <!-- END Icons -->
 
 <!-- Stylesheets -->

@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts_admin.master');
-});
-
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/','User\HomeController@index')->name('user.index');
+Route::get('/home','User\HomeController@index')->name('user.index');
+Route::get('/about','User\HomeController@about')->name('user.about');
+Route::get('/speaker','User\HomeController@speaker')->name('user.speaker');
+Route::get('/schedule','User\HomeController@schedule')->name('user.schedule');
+Route::get('/contact','User\HomeController@contact')->name('user.contact');
+Route::post('/registrasi','User\PendaftarController@store')->name('daftar.store');
