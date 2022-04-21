@@ -34,6 +34,7 @@
         });
 
         var table = $('.tableNews').DataTable({
+            
             processing: true,
             serverSide: true,
             searching:  true,
@@ -45,7 +46,7 @@
             url: "{{ route('admin.artikel.data') }}",
             },
             columns: [
-                {data: 'id', name: 'id'},
+                { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },
                 {data: 'judul', name: 'judul'},
                 {data: 'gambar', name: 'gambar'},
                 {data: 'kategori', name: 'kategori'},
@@ -58,6 +59,7 @@
         $('#addNews').click(function () {
             idEdit = 0;
             $('#frm_news').trigger("reset");
+            $('#detail').summernote('reset');
             $('#modalNews').modal('show');
             $('.img-preview').attr('src', '');
             $("div.s_kategori select").val('').change();
@@ -128,7 +130,7 @@
                     $('#frm_news').trigger("reset");
                     $('#modalNews').modal('show');
                     $('#judul').val(res.data.judul);
-                    $('#detail').val(res.data.detail);
+                    $('#detail').summernote('code', res.data.detail);
                     $('.img-preview').attr('src', base_url);
                     $("div.s_kategori select").val(res.data.kategori).change();
                     console.log(res.data.kategori)

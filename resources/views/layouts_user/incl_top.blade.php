@@ -1,0 +1,32 @@
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content=""/>
+<meta name="author" content=""/>
+<meta name="robots" content=""/>
+<meta name="description" content="Proven Force Indonesia"/>
+<meta property="og:title" content="Proven Force Indonesia"/>
+<meta property="og:description" content="Industry – Factory & Industrial HTML Template is particularly designed for factory, industry, architecture, plants, mechanical, power and energy Business Template."/>
+<meta property="og:image" content="https://indiro.dexignzone.com/xhtml/social-image.png"/>
+<meta name="format-detection" content="telephone=no">
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Proven Force Indonesia</title>
+
+<!-- Favicon icon -->
+<link rel="icon" type="image/png" href="{{asset('assets_user/images/favicon.png')}}">
+
+<!-- Custom Stylesheet -->
+<link href="{{asset('assets_user/vendor/aos/aos.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="{{asset('assets_user/vendor/swiper/swiper-bundle.min.css')}}">
+<link href="{{asset('assets_user/vendor/magnific-popup/magnific-popup.min.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="{{asset('assets_user/css/style.css')}}">
+<link rel="stylesheet" class="skin" href="{{asset('assets_user/css/skin/skin-1.css')}}">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">

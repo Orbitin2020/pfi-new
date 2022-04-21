@@ -54,7 +54,7 @@
                 <ul class="list-inline mt-10">
                     <li class="list-inline-item">
                         <a class="text-dual-primary-dark font-size-s font-w600 text-uppercase pb-10"
-                            href="javascript:void(0)">test</a>
+                            href="javascript:void(0)">{{Auth::user()->name}}</a>
                     </li>
                 </ul>
                 <ul class="list-inline mb-10">
@@ -88,17 +88,17 @@
                 <li>
                   <a href={{route('admin.artikel.index')}} class="active"><i class="fa fa-newspaper-o"></i><span class="sidebar-mini-hide">News</span></a>
                 </li>
-                {{-- <li>
+                <li>
                   <a class="nav-submenu active" data-toggle="nav-submenu"><i class="fa fa-file-image-o"></i><span class="sidebar-mini-hide">Galeri</span></a>
                   <ul>
                       <li>
-                          <a href="{{route('galeri.category.index')}}">Image Category</a>
+                          <a href="{{route('admin.katgale.index')}}">Image Category</a>
                       </li>
                       <li>
-                          <a href="{{route('galeri.index')}}">Image</a>
+                          <a href="{{route('admin.galeri.index')}}">Image</a>
                       </li>
                   </ul>
-                </li> --}}
+                </li>
                 @hasrole('super-admin')
                 <li>
                   <a href={{route('user.index')}} class="active"><i class="fa fa-user"></i><span class="sidebar-mini-hide">Manajemen User Admin</span></a>

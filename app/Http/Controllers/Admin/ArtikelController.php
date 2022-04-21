@@ -45,7 +45,7 @@ class ArtikelController extends Controller
                     return $img;
                 })
                 ->editColumn('detail', function ($artikel) {
-                    return Str::limit($artikel->detail, 200);
+                    return Str::limit(strip_tags($artikel->detail), 150);
                 })
                 ->addColumn('action', function ($row) {
                     $btn = '';

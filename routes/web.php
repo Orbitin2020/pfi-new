@@ -13,10 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','User\HomeController@index')->name('user.index');
-Route::get('/home','User\HomeController@index')->name('user.index');
-Route::get('/about','User\HomeController@about')->name('user.about');
-Route::get('/speaker','User\HomeController@speaker')->name('user.speaker');
-Route::get('/schedule','User\HomeController@schedule')->name('user.schedule');
-Route::get('/contact','User\HomeController@contact')->name('user.contact');
-Route::post('/registrasi','User\PendaftarController@store')->name('daftar.store');
+Route::get('/','User\HomeController@index')->name('user.home');
+Route::get('/home','User\HomeController@index')->name('user.home');
+Route::get('/about','User\AboutController@index')->name('user.about');
+Route::get('/gallery','User\GalleryController@index')->name('user.gallery');
+Route::get('/contact','User\ContactController@index')->name('user.contact');
+// News
+Route::get('/news','User\NewsController@index')->name('user.news');
+// End News
+
+// Blog
+Route::get('/blog','User\NewsController@blog')->name('user.blog');
+// End Blog

@@ -4,24 +4,37 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Admin\Galery_categories;
+use App\Models\Galery_categories;
+use DataTables;
 
 class GaleriCategoryController extends Controller
 {
     public function index()
     {
-        return view('admin.galeri_category.index');
+        return view('admin.galery_kategori.index');
     }
 
-    public function getData()
+    public function getData(Request $request)
     {
-        $categori = Galery_categories::orderBy('created_at','desc')->get();
-        return response([
-            'success'   => true,
-            'message'   => 'List Galery Categories',
-            'data'      => $categori
-        ],200);
+        // dd(Artikel::select('*')->orderBy('created_at')->get());
+        if ($request->ajax()) {
+            $kategori = Galery_categories::select('*')->orderBy('created_at');
+            return Datatables::of($kategori)
+                ->addIndexColumn()
+                ->addColumn('created_at', function ($kategori) {
 
+                    return date('d-m-Y', strtotime($kategori->created_at));
+                })
+                ->addColumn('action', function ($row) {
+                    $btn = '';
+                    $btn = $btn . '<button href="javascript:void(0)" data-id="' . $row->id . '" id="edit" type="button" class="edit btn btn-primary btn-sm m-1" tittle="Edit"><i class="fa fa-pencil" ></i></button>';
+                    $btn = $btn . '<button href="javascript:void(0)" data-id="' . $row->id . '" id="delete" type="button" class="delete btn btn-danger btn-sm m-1" tittle="Hapus"><i class="fa fa-trash" ></i></button>';
+    
+                    return $btn;
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
     }
 
     public function store(Request $request)
