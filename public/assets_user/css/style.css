@@ -14348,9 +14348,10 @@ ul a.rsswidget {
       left: 0;
       top: 0;
       position: absolute;
-      background: -moz-linear-gradient(left, rgba(25, 25, 25, 0.9) 40%, rgba(125, 185, 232, 0) 100%);
+      /* background: -moz-linear-gradient(left, rgba(25, 25, 25, 0.9) 40%, rgba(125, 185, 232, 0) 100%);
       background: -webkit-linear-gradient(left, rgba(25, 25, 25, 0.9) 40%, rgba(125, 185, 232, 0) 100%);
-      background: linear-gradient(to right, rgba(25, 25, 25, 0.9) 40%, rgba(125, 185, 232, 0) 100%); }
+      background: linear-gradient(to right, rgba(25, 25, 25, 0.9) 40%, rgba(125, 185, 232, 0) 100%);  */
+    }
     @media only screen and (max-width: 575px) {
       .main-slider2 .swiper-slide {
         min-height: 620px; } }

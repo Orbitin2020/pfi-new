@@ -102,26 +102,35 @@
                     </li>
                     <li class="has-mega-menu"><a href="javascript:void(0);">Services</a>
                         <ul class="mega-menu">
-                            <li><a href="javascript:void(0);">Productivity Improvement</a>
+                            <li><a href="javascript:void(0);">Consulting</a>
                                 <ul>
-                                    <li><a href="about-me.html">List Sub Menu</a></li>
-                                    
+                                    <li><a href="about-me.html">About Consulting</a></li>
+                                    <li><a href="about-me.html">Organizational Enhancement Program</a></li>
+                                    <li><a href="about-me.html">Performance Management</a></li>
+                                    <li><a href="about-me.html">Management Control System Development</a></li>
+                                    <li><a href="about-me.html">Lean Process Development</a></li>
                                 </ul>
                             </li>
                             <li> <a href="javascript:void(0);">Manpower Outsourcing</a>
                                 <ul>
-                                    <li><a href="coming-soon.html">List Sub Menu</a></li>
+                                    <li><a href="about-me.html">About Manpower Outsourcing</a></li>
+                                    <li><a href="coming-soon.html">Outsourcing Services</a></li>
                                    
                                 </ul>
                             </li>
                             <li> <a href="javascript:void(0);">Training & Development</a>
                                 <ul>
-                                    <li><a href="gallery-grid-2.html">List Sub Menu</a></li>
+                                    <li><a href="about-me.html">About Training & Development</a></li>
+                                    <li><a href="about-me.html">In House Training Program</a></li>
+                                    <li><a href="about-me.html">Productivity Talent Managenent</a></li>
+                                    <li><a href="about-me.html">Outbound Training</a></li>
+                                    <li><a href="about-me.html">Public Training</a></li>
                                     
                                 </ul>
                             </li>
                             <li> <a href="javascript:void(0);">Energy Efficiency</a>
                                 <ul>
+                                    <li><a href="about-me.html">About Energy Efficiency</a></li>
                                     <li><a href="pricing.html">List Sub Menu</a></li>
                                     
                                 </ul>

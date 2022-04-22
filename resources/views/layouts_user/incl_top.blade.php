@@ -17,7 +17,10 @@
 <title>Proven Force Indonesia</title>
 
 <!-- Favicon icon -->
-<link rel="icon" type="image/png" href="{{asset('assets_user/images/favicon.png')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets_user/images/logo/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets_user/images/logo/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets_user/images/logo/favicon-16x16.png')}}">
+
 
 <!-- Custom Stylesheet -->
 <link href="{{asset('assets_user/vendor/aos/aos.css')}}" rel="stylesheet">
