@@ -3,11 +3,11 @@
         <div class="container-fluid clearfix">
             <!-- Website Logo -->
             <div class="logo-header mostion logo-dark">
-                <a href=""><img src="{{asset('assets_user/images/logo.png')}}" alt=""></a>
+                <a href=""><img src="{{asset('assets_user/images/logo/logo-pfi.png')}}" style="max-width: 115px" alt=""></a>
             </div>
             
             <div class="logo-header mostion logo-white">
-                <a href=""><img src="{{asset('assets_user/images/logo-white.png')}}" alt=""></a>
+                <a href=""><img src="{{asset('assets_user/images/logo/logo-pfi.png')}}" style="max-width: 115px" alt=""></a>
             </div>
             
             <!-- Nav Toggle Button -->

@@ -6,7 +6,7 @@
                 <div class="col-xl-4 col-lg-4 col-sm-6 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="widget widget_about">
                         <div class="footer-logo logo-white">
-                            <a href=""><img src="{{asset('assets_user/images/logo-white.png')}}" alt=""/></a> 
+                            <a href=""><img src="{{asset('assets_user/images/logo/logo-pfi.png')}}" alt=""/></a> 
                         </div>
                         <p>Our goal is to offer broad capabilities, competitive pricing, exceptional quality and outstanding service to each and every customer.</p>
                         <div class="dz-social-icon">
