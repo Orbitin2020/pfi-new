@@ -26,6 +26,7 @@
 <link href="{{asset('assets_user/vendor/aos/aos.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('assets_user/vendor/swiper/swiper-bundle.min.css')}}">
 <link href="{{asset('assets_user/vendor/magnific-popup/magnific-popup.min.css')}}" rel="stylesheet">
+<link href="{{asset('assets_user/vendor/lightgallery/css/lightgallery.min.css')}}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('assets_user/css/style.css')}}">
 <link rel="stylesheet" class="skin" href="{{asset('assets_user/css/skin/skin-1.css')}}">
 

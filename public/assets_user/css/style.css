@@ -11146,7 +11146,8 @@ button:focus {
 .overlay-black-light:before,
 .overlay-black-middle:before,
 .overlay-black-dark:before {
-  background: #000; }
+  /* background: #000;  */
+}
 
 .overlay-gradient-light:before,
 .overlay-gradient-middle:before,

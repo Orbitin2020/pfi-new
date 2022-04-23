@@ -4,7 +4,7 @@
 <div class="page-content bg-white">
 		
     <!-- Banner  -->
-    <div class="dz-bnr-inr dz-bnr-inr-sm my-paroller overlay-black-middle text-center" id="my-element" data-paroller-factor="-0.5" data-paroller-direction="horizontal" style="background-image: url(images/bnr/bnr1.jpg);">
+    <div class="dz-bnr-inr dz-bnr-inr-sm my-paroller overlay-black-middle text-center" id="my-element" data-paroller-factor="-0.5" data-paroller-direction="horizontal" style="background-image: url(assets_user/images/bnr/bnr1.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>News</h1>
@@ -25,10 +25,11 @@
     <section class="content-inner">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 m-b40">
+                <div class="col-xl-8 col-lg-8 m-b40">
+                    @foreach ($artikel as $d)
                     <div class="dz-card style-1 shadow m-b30">
                         <div class="dz-media">
-                            <a href="blog-details.html"><img src="{{asset('assets_user/images/blog/large/pic1.jpg')}}" alt=""></a>
+                            <a href="blog-details.html"><img src="{{asset('image/artikel/'.$d->gambar)}}" alt=""></a>
                         </div>
                         <div class="dz-info">
                             <div class="dz-meta">
@@ -36,24 +37,12 @@
                                     <li class="post-date">August 30, 2019</li>
                                 </ul>
                             </div>
-                            <h3 class="dz-title"><a href="blog-details.html">Agency Doesn't Have To Be Hard. Read These 9 Tricks Go Get A Head Start.</a></h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eget aliquet nibh. Integer tincidunt odio enim, quis tempor sapien tristique consequat. Maecenas consequat tempor ipsum, quis tempus orci mattis et. Praesent mollis scelerisque mattis.</p>
+                            <h3 class="dz-title"><a href="blog-details.html">{{($d->judul)}}</a></h3>
+                            <p>{{Str::limit(strip_tags($d->detail), 150)}}</p>
                         </div>
                     </div>
-                    <div class="dz-card style-1 shadow m-b30">
-                        <div class="dz-media">
-                            <a href="blog-details.html"><img src="{{asset('assets_user/images/blog/large/pic2.jpg')}}" alt=""></a>
-                        </div>
-                        <div class="dz-info">
-                            <div class="dz-meta">
-                                <ul>
-                                    <li class="post-date">August 30, 2019</li>
-                                </ul>
-                            </div>
-                            <h3 class="dz-title"><a href="blog-details.html">The Most Common Agency Debate Isn't As Simple As You May Think</a></h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent eget aliquet nibh. Integer tincidunt odio enim, quis tempor sapien tristique consequat. Maecenas consequat tempor ipsum, quis tempus orci mattis et. Praesent mollis scelerisque mattis.</p>
-                        </div>
-                    </div>
+                    @endforeach
+                   
                     <nav aria-label="Blog Pagination">
                         <ul class="pagination text-center m-b30 m-t50 m-lg-t10">
                             <li class="page-item"><a class="page-link prev" href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>
@@ -65,33 +54,58 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <!-- Subscribe -->
-    <section class="section-full dz-subscribe style-1">
-        <div class="container">
-            <div class="subscribe-inner row align-items-center">
-                <div class="col-lg-6 mb-lg-0 mb-4">
-                    <div class="title-head">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <h3 class="title text-white">SIGN UP TO GET LATEST UPDATES</h3>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form class="dzSubscribe" action="script/mailchamp.php" method="post">
-                        <div class="dzSubscribeMsg"></div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input name="dzEmail" required="required" type="email" class="form-control" placeholder="Email Address...">
-                                <div class="input-group-addon">
-                                    <button name="submit" value="Submit" type="submit" class="btn btn-primary"><i class="fas fa-envelope"></i></button>
+                <div class="col-xl-4 col-lg-4">
+                    <aside class="side-bar sticky-top right">
+                        <div class="widget style-1 widget_categories">
+                            <div class="widget-title">
+                                <h4 class="title">Category</h4>
+                            </div>
+                            <ul>
+                                <li class="cat-item"><a href="javascript:void(0);">Software</a></li>                                         
+                                <li class="cat-item"><a href="javascript:void(0);">Analysis</a></li>                                         
+                                <li class="cat-item"><a href="javascript:void(0);">Cryptocurrency</a></li>                                         
+                                <li class="cat-item"><a href="javascript:void(0);">Technology</a></li>                                         
+                                <li class="cat-item"><a href="javascript:void(0);">Mobile App</a></li> 
+                                <li class="cat-item"><a href="javascript:void(0);">Development</a></li> 
+                            </ul>
+                        </div>
+                        
+                        <div class="widget style-1 widget_gallery gallery-grid-3">
+                            <div class="widget-title">
+                                <h4 class="title">Gallery</h4>
+                            </div>
+                            <ul id="lightgallery" class="lightgallery">
+                                <li>
+                                    <div class="dlab-post-thum dlab-img-effect">
+                                        <span data-exthumbimage="{{asset('assets_user/images/gallery/small/pic1.jpg')}}" data-src="{{asset('assets_user/images/gallery/small/pic1.jpg')}}" class="lightimg" title="Image 1 Title will come here">		
+                                            <img src="{{asset('assets_user/images/gallery/small/pic1.jpg')}}" alt=""> 
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="widget style-1 recent-posts-entry">
+                            <div class="widget-title">
+                                <h4 class="title">Recent Post</h4>
+                            </div>
+                            <div class="widget-post-bx">
+                                <div class="widget-post clearfix">
+                                    <div class="dz-media"> 
+                                        <img src="{{asset('assets_user/images/blog/recent-blog/pic1.jpg')}}" alt="">
+                                    </div>
+                                    <div class="dz-info">
+                                        <div class="dz-meta">
+                                            <ul>
+                                                <li class="post-date"> 7 March, 2022</li>
+                                            </ul>
+                                        </div>
+                                        <h6 class="title"><a href="blog-details.html">Aliqua sodales vestibulum risus nterdum malesuad</a></h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </aside>
                 </div>
             </div>
         </div>

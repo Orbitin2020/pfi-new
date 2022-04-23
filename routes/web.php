@@ -13,11 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/','User\HomeController@index')->name('user.home');
 Route::get('/home','User\HomeController@index')->name('user.home');
 Route::get('/about','User\AboutController@index')->name('user.about');
 Route::get('/gallery','User\GalleryController@index')->name('user.gallery');
 Route::get('/contact','User\ContactController@index')->name('user.contact');
+
+// Consulting
+Route::group(['prefix' => 'consulting'],function(){
+    Route::get('/', 'User\ConsultingController@index')->name('user.consulting');
+    Route::get('/organizational', 'User\ConsultingController@organizational')->name('user.consulting.organizational');
+    Route::get('/performance', 'User\ConsultingController@performance')->name('user.consulting.performance');
+});
+
 // News
 Route::get('/news','User\NewsController@index')->name('user.news');
 // End News

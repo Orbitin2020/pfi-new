@@ -125,7 +125,7 @@ class ArtikelController extends Controller
         if($request->hasfile('gambar')){   
             $gambar = $request->file('gambar');
             $extension = $gambar->getClientOriginalExtension();
-            $name = $request->input('nama').'.'.$extension;
+            $name = $request->input('judul').'.'.$extension;
             $path = public_path().'/image/artikel';
             $upload = $gambar->move($path,$name);
             

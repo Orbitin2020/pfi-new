@@ -3,7 +3,7 @@
 <div class="page-content bg-white">
 		
     <!-- Banner  -->
-    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(images/bnr/bnr1.jpg);">
+    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(assets_user/images/bnr/bnr1.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>Gallery Masonry</h1>
