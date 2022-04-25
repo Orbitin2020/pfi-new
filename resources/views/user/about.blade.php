@@ -34,8 +34,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 m-b30">
-                    <p class="m-b30">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud co </p>
-                    <a href="about-us.html" class="btn btn-primary btn-border btn-border m-r10 m-b10">ABOUT US</a>
+                    <p class="m-b30" align="justify">Since its establishment in 2003 PT Proven Force Indonesia converted opportunities into success story. Our clients praised PT Proven Force Indonesia Team for being able to work well with their organizations and deliver the result. Testimonies from Hitachi, Medco Group, Nippon Indosari Corporindo, Frisian Flag, Bentoel Prima,Yupi Indo jelly gum, among other, proved that the result show in their performance. After few years of serving industries, PT Proven Force Indonesia has proven itself a worthy partner for companies who are looking toward continuous improvement. </p>
+                    <a href="{{route('user.contact')}}" class="btn btn-primary btn-border btn-border m-r10 m-b10">Contact Us</a>
                 </div>
             </div>
 

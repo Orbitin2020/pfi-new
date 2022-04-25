@@ -38,7 +38,7 @@
                         <div class="section-head style-1">
                             <h5 class="sub-title text-primary">Performance Management</h5>
                             <h3 class="title m-b20">We Are Here to Increase Your Knowledge With Experience</h3>
-                            <p>
+                            <p align="justify">
                                 Working with your supervisory level, PFI productivity specialist will facilitate in the formulation of specific and measurable key performance indicators (KPI) and objective key result (OKR), which in turn will be used as a basis for providing your organization with a simple and structured reporting mechanism.
                                 
                             </p>

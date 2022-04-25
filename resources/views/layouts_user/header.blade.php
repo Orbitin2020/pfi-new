@@ -107,9 +107,9 @@
                                     <li><a href="{{route('user.consulting')}}">About Consulting</a></li>
                                     <li><a href="{{route('user.consulting.organizational')}}">Organizational Enhancement Program</a></li>
                                     <li><a href="{{route('user.consulting.performance')}}">Performance Management</a></li>
-                                    <li><a href="about-me.html">Management Control System Development</a></li>
-                                    <li><a href="about-me.html">Lean Process Development</a></li>
-                                    <li><a href="about-me.html">Digital Transformation Program</a></li>
+                                    <li><a href="{{route('user.consulting.management')}}">Management Control System Development</a></li>
+                                    <li><a href="{{route('user.consulting.lean')}}">Lean Process Development</a></li>
+                                    <li><a href="{{route('user.consulting.digital')}}">Digital Transformation Program</a></li>
                                 </ul>
                             </li>
                             <li> <a href="javascript:void(0);">Manpower Outsourcing</a>

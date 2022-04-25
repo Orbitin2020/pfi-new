@@ -23,7 +23,7 @@
     
     <section class="content-inner-2 pt-0">
         <div class="map-iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" style="border:0; width:100%; min-height:100%; margin-bottom: -8px;" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.159315046212!2d106.84278481540119!3d-6.2427242628683555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3b9259615c5%3A0x1fa5a36bd5f609ec!2sSOHO%20Pancoran!5e0!3m2!1sid!2sid!4v1650854604758!5m2!1sid!2sid" style="border:0; width:100%; min-height:100%; margin-bottom: -8px;" allowfullscreen></iframe>
         </div>
     </section>
     
@@ -68,23 +68,27 @@
                             <h6 class="sub-title text-primary">CONTACT US</h6>
                             <h3 class="title m-b20">Get In Touch With Us</h3>
                         </div>
-                        <form class="dz-form dzForm" method="POST" action="script/contact.php">
-                            <input type="hidden" class="form-control" name="dzToDo" value="Contact">
+                        <form class="dz-form dzForm" id="frm_contact">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            {{-- <input type="hidden" name="_next" value="http://localhost:8000/contact"> --}}
+                            
                             <div class="dzFormMsg"></div>		
                             <div class="input-group">
-                                <input type="text" class="form-control" name="dzOther[first_name]" placeholder="Full Name">
+                                <input type="text" class="form-control" name="nama" placeholder="Full Name">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="dzEmail" placeholder="Email Adress">
+                                <input type="text" class="form-control" name="email" placeholder="Email Adress">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="dzOther[phone_number]" placeholder="Phone No.">
+                                <input type="text" class="form-control" name="no_hp" placeholder="Phone No.">
                             </div>
                             <div class="input-group">
-                                <textarea name="dzMessage" rows="5" class="form-control">Message</textarea>
+                                <textarea name="message" rows="5" class="form-control">Message</textarea>
                             </div>
                             <div>
-                                <button name="submit" type="submit" value="submit" class="btn w-100 btn-primary btn-border">CONTACT US</button>
+                                <button onclick="contact()" name="submit" type="submit" value="submit" class="btn w-100 btn-primary btn-border">CONTACT US</button>
                             </div>
                         </form>
                     </div>
@@ -109,31 +113,53 @@
         </div>
     </section>
     
-    <!-- Subscribe -->
-    <section class="section-full dz-subscribe style-1">
-        <div class="container">
-            <div class="subscribe-inner row align-items-center">
-                <div class="col-lg-6 mb-lg-0 mb-4">
-                    <div class="title-head">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <h3 class="title text-white">SIGN UP TO GET LATEST UPDATES</h3>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form class="dzSubscribe" action="script/mailchamp.php" method="post">
-                        <div class="dzSubscribeMsg"></div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input name="dzEmail" required="required" type="email" class="form-control" placeholder="Email Address...">
-                                <div class="input-group-addon">
-                                    <button name="submit" value="Submit" type="submit" class="btn btn-primary"><i class="fas fa-envelope"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
 @endsection
+@push('scripts')
+<script>
+    function contact() {
+        $.ajax({
+            // headers : {
+            //     'X-CSRF-TOKEN' : "{{csrf_token()}}"
+            // },
+            method: 'POST',
+            url: 'https://formsubmit.co/ajax/info@provenforceindonesia.com',
+            data: $('#frm_contact').serialize(),
+            beforeSend: function() {
+                Swal.fire({
+                    title: 'Please Wait...',
+                    text: 'Your data is being processed!',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                    },
+                })
+            },
+            success: function(res) {
+                $('#frm_contact').trigger("reset");
+                Swal.fire({
+                    title: 'Action Success!',
+                    icon: 'success',
+                    text: 'Your Message Has Been Sent',
+                    showConfirmButton: true
+                })
+                // $("#heading").text("Action Success")
+                // $("#body").text("New product successfully created")
+                // setInterval(() => {
+                //   $('#loading-modal').modal('hide')
+                // }, 2000)
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                $('#frm_contact').trigger("reset");
+                Swal.fire({
+                    title: 'Whoopsss....',
+                    icon: 'error',
+                    text: 'Your Message Has Not Been Sent',
+                    showConfirmButton: true
+                })
+            }
+        });
+    }
+</script>
+@endpush

@@ -25,10 +25,14 @@ Route::group(['prefix' => 'consulting'],function(){
     Route::get('/', 'User\ConsultingController@index')->name('user.consulting');
     Route::get('/organizational', 'User\ConsultingController@organizational')->name('user.consulting.organizational');
     Route::get('/performance', 'User\ConsultingController@performance')->name('user.consulting.performance');
+    Route::get('/management', 'User\ConsultingController@management')->name('user.consulting.management');
+    Route::get('/lean', 'User\ConsultingController@lean')->name('user.consulting.lean');
+    Route::get('/digital', 'User\ConsultingController@digital')->name('user.consulting.digital');
 });
 
 // News
 Route::get('/news','User\NewsController@index')->name('user.news');
+Route::get('/news/{slug}','User\NewsController@detail')->name('user.news.detail');
 // End News
 
 // Blog

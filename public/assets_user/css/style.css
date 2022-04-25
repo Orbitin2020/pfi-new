@@ -21388,12 +21388,13 @@ pre {
     left: 0;
     top: 0;
     z-index: -1;
-    background: -moz-linear-gradient(left, rgba(20, 20, 20, 0) 0%, #141414 100%);
+    /* background: -moz-linear-gradient(left, rgba(20, 20, 20, 0) 0%, #141414 100%); */
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(20, 20, 20, 0) 0%, #141414 100%);
+    /* background: -webkit-linear-gradient(left, rgba(20, 20, 20, 0) 0%, #141414 100%); */
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(20, 20, 20, 0) 0%, #141414 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    /* background: linear-gradient(to right, rgba(20, 20, 20, 0) 0%, #141414 100%); */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+  }
   .contact-wraper1:after {
     content: "";
     height: 100%;

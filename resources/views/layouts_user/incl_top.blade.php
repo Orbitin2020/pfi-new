@@ -7,7 +7,7 @@
 <meta name="description" content="Proven Force Indonesia"/>
 <meta property="og:title" content="Proven Force Indonesia"/>
 <meta property="og:description" content="Industry – Factory & Industrial HTML Template is particularly designed for factory, industry, architecture, plants, mechanical, power and energy Business Template."/>
-<meta property="og:image" content="https://indiro.dexignzone.com/xhtml/social-image.png"/>
+<meta property="og:image" content="{{asset('assets_user/images/logo/logo-pfi.jpg')}}"/>
 <meta name="format-detection" content="telephone=no">
 
 <!-- Mobile Specific -->

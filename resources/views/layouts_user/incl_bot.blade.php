@@ -13,4 +13,15 @@
 <script src="{{asset('assets_user/js/dz.ajax.js')}}"></script><!-- AJAX -->
 <script src="{{asset('assets_user/js/custom.js')}}"></script><!-- CUSTOM JS -->
 <script src='https://www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
+{{-- Swal --}}
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{-- End Swal --}}
+
+<script type="text/javascript">
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    })
+</script>
 

@@ -29,29 +29,38 @@
                     @foreach ($artikel as $d)
                     <div class="dz-card style-1 shadow m-b30">
                         <div class="dz-media">
-                            <a href="blog-details.html"><img src="{{asset('image/artikel/'.$d->gambar)}}" alt=""></a>
+                            <a href="{{route('user.news.detail',$d->slug)}}"><img src="{{asset('image/artikel/'.$d->gambar)}}" alt=""></a>
                         </div>
                         <div class="dz-info">
                             <div class="dz-meta">
                                 <ul>
-                                    <li class="post-date">August 30, 2019</li>
+                                    <li class="post-date">{{date('d M Y', strtotime($d->created_at))}}</li>
                                 </ul>
                             </div>
-                            <h3 class="dz-title"><a href="blog-details.html">{{($d->judul)}}</a></h3>
+                            <h3 class="dz-title"><a href="{{route('user.news.detail',$d->slug)}}">{{($d->judul)}}</a></h3>
                             <p>{{Str::limit(strip_tags($d->detail), 150)}}</p>
                         </div>
                     </div>
                     @endforeach
                    
                     <nav aria-label="Blog Pagination">
-                        <ul class="pagination text-center m-b30 m-t50 m-lg-t10">
-                            <li class="page-item"><a class="page-link prev" href="javascript:void(0);"><i class="fas fa-chevron-left"></i></a></li>
-                            <li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
-                            <li class="page-item"><a class="page-link next" href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>
-                        </ul>
+                        @if ($artikel->hasPages())
+                            <ul class="pagination text-center m-b30 m-t50 m-lg-t10">
+                                {{-- @if ($artikel->onFirstPage())
+                                    
+                                @else
+                                    <li class="page-item"><a class="page-link prev" href="{{ $artikel->previousPageUrl() }}"><i class="fas fa-chevron-left"></i></a></li>
+                                @endif --}}
+                                {{ $artikel->links() }}
+                                {{-- @if ($artikel->hasMorePages())
+                                    <li class="page-item"><a class="page-link next" href="{{ $artikel->nextPageUrl() }}"><i class="fas fa-chevron-right"></i></a></li>
+                                    
+                                @else
+                                    <li class="page-item disabled"><a class="page-link next" href="javascript:void(0);"><i class="fas fa-chevron-right"></i></a></li>
+                                @endif --}}
+                                
+                            </ul>
+                        @endif 
                     </nav>
                 </div>
                 <div class="col-xl-4 col-lg-4">
@@ -100,7 +109,7 @@
                                                 <li class="post-date"> 7 March, 2022</li>
                                             </ul>
                                         </div>
-                                        <h6 class="title"><a href="blog-details.html">Aliqua sodales vestibulum risus nterdum malesuad</a></h6>
+                                        <h6 class="title"><a href="{{route('user.news.detail',$d->slug)}}">Aliqua sodales vestibulum risus nterdum malesuad</a></h6>
                                     </div>
                                 </div>
                             </div>

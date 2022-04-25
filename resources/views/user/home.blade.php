@@ -33,7 +33,7 @@
                                         <li data-swiper-parallax="-1000" style="color: white">Long term relationship</li>
                                     </ul>
                                 </p>
-                                <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i class="fas fa-long-arrow-alt-right m-l15"></i></a>
+                                <a data-swiper-parallax="-1500" href="{{route('user.about')}}" class="btn btn-primary">READ MORE <i class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-cogwheel"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Construction Machines</a></h4>
+                                    <h4 class="dz-title"><a href="services.html">Consulting</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
@@ -168,7 +168,7 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-engineer-1"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Best Engineering</a></h4>
+                                    <h4 class="dz-title"><a href="services.html">Manpower Outsourcing</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
@@ -185,7 +185,24 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-robot-arm"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Power & Energy Sector</a></h4>
+                                    <h4 class="dz-title"><a href="services.html">Training & Development</a></h4>
+                                    <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
+                                </div>
+                                <div class="dz-bottom">
+                                    <a class="btn btn-primary d-block" href="services.html">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt="">
+                                </div>
+                                <div class="dz-info" data-num="04">
+                                    <div class="icon-lg m-b20 text-primary">
+                                        <i class="flaticon-robot-arm"></i>
+                                    </div>
+                                    <h4 class="dz-title"><a href="services.html">Energy Efficiency</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
@@ -430,27 +447,29 @@
                             <h6 class="sub-title text-primary">CONTACT US</h6>
                             <h3 class="title m-b20">Request A Quote</h3>
                         </div>
-                        <form class="dz-form dzForm" method="POST" action="script/contact.php">
-                            <input type="hidden" class="form-control" name="dzToDo" value="Contact">
+                        <form class="dz-form dzForm" id="frm_contact">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
                             <div class="dzFormMsg"></div>		
                             <div class="input-group">
-                                <input type="text" class="form-control" name="dzOther[first_name]" placeholder="Full Name">
+                                <input type="text" class="form-control" name="nama" placeholder="Full Name">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="dzEmail" placeholder="Email Adress">
+                                <input type="text" class="form-control" name="email" placeholder="Email Adress">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="dzOther[phone_number]" placeholder="Phone No.">
+                                <input type="text" class="form-control" name="no_hp" placeholder="Phone No.">
                             </div>
                             <div class="input-group">
-                                <textarea name="dzMessage" rows="5" class="form-control">Message</textarea>
+                                <textarea name="message" rows="5" class="form-control">Message</textarea>
                             </div>
                             {{-- <div class="input-group">
                                 <div class="g-recaptcha" data-sitekey="<!-- Put Your reCaptcha Secret Key -->" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                                 <input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
                             </div> --}}
                             <div>
-                                <button name="submit" type="submit" value="submit" class="btn btn-primary">SUBSCRIBE NOW</button>
+                                <button onclick="contact()" name="submit" type="submit" value="submit" class="btn btn-primary">SUBSCRIBE NOW</button>
                             </div>
                         </form>
                     </div>
@@ -502,3 +521,51 @@
 
 </div>  
 @endsection
+@push('scripts')
+<script>
+    function contact() {
+        $.ajax({
+            // headers : {
+            //     'X-CSRF-TOKEN' : "{{csrf_token()}}"
+            // },
+            method: 'POST',
+            url: 'https://formsubmit.co/ajax/info@provenforceindonesia.com',
+            data: $('#frm_contact').serialize(),
+            beforeSend: function() {
+                Swal.fire({
+                    title: 'Please Wait...',
+                    text: 'Your data is being processed!',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                    },
+                })
+            },
+            success: function(res) {
+                $('#frm_contact').trigger("reset");
+                Swal.fire({
+                    title: 'Action Success!',
+                    icon: 'success',
+                    text: 'Your Message Has Been Sent',
+                    showConfirmButton: true
+                })
+                // $("#heading").text("Action Success")
+                // $("#body").text("New product successfully created")
+                // setInterval(() => {
+                //   $('#loading-modal').modal('hide')
+                // }, 2000)
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                $('#frm_contact').trigger("reset");
+                Swal.fire({
+                    title: 'Whoopsss....',
+                    icon: 'error',
+                    text: 'Your Message Has Not Been Sent',
+                    showConfirmButton: true
+                })
+            }
+        });
+    }
+</script>
+@endpush

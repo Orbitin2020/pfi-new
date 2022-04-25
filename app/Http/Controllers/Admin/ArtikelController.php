@@ -74,7 +74,7 @@ class ArtikelController extends Controller
             'detail'    => $request->input('detail'),
             'gambar'    => $name,
             'kategori'  => $request->input('kategori'),
-            'admin_id'  => $request->input('admin_id'),
+            'admin_id'  => Auth::user()->id,
 
         ]);
         return response()->json([
@@ -142,7 +142,7 @@ class ArtikelController extends Controller
                 'detail'    => $request->input('detail'),
                 'gambar'    => $name,
                 'kategori'  => $request->input('kategori'),
-                'admin_id'  => $request->input('admin_id'),
+                'admin_id'  => Auth::user()->id,
     
             ]);
         }else{
@@ -152,7 +152,7 @@ class ArtikelController extends Controller
                 'deskripsi' => $request->input('deskripsi'),
                 'detail'    => $request->input('detail'),
                 'kategori'  => $request->input('kategori'),
-                'admin_id'  => $request->input('admin_id'),
+                'admin_id'  => Auth::user()->id,
     
             ]);
         }
