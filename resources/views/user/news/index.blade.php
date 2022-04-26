@@ -65,20 +65,6 @@
                 </div>
                 <div class="col-xl-4 col-lg-4">
                     <aside class="side-bar sticky-top right">
-                        <div class="widget style-1 widget_categories">
-                            <div class="widget-title">
-                                <h4 class="title">Category</h4>
-                            </div>
-                            <ul>
-                                <li class="cat-item"><a href="javascript:void(0);">Software</a></li>                                         
-                                <li class="cat-item"><a href="javascript:void(0);">Analysis</a></li>                                         
-                                <li class="cat-item"><a href="javascript:void(0);">Cryptocurrency</a></li>                                         
-                                <li class="cat-item"><a href="javascript:void(0);">Technology</a></li>                                         
-                                <li class="cat-item"><a href="javascript:void(0);">Mobile App</a></li> 
-                                <li class="cat-item"><a href="javascript:void(0);">Development</a></li> 
-                            </ul>
-                        </div>
-                        
                         <div class="widget style-1 widget_gallery gallery-grid-3">
                             <div class="widget-title">
                                 <h4 class="title">Gallery</h4>
@@ -96,7 +82,7 @@
                         
                         <div class="widget style-1 recent-posts-entry">
                             <div class="widget-title">
-                                <h4 class="title">Recent Post</h4>
+                                <h4 class="title">Newest Post</h4>
                             </div>
                             <div class="widget-post-bx">
                                 <div class="widget-post clearfix">

@@ -3,7 +3,7 @@
 <div class="page-content bg-white">
 		
     <!-- Banner  -->
-    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(assets_user/images/bnr/bnr1.jpg);">
+    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(assets_user/images/bnr/productivity.png);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>About Consulting Service</h1>
@@ -27,7 +27,7 @@
             <div class="row about-style14">
                 <div class="col-lg-6 m-b30">
                     <div class="dz-media">	
-                        <img src="{{asset('assets_user/images/about/about22.jpg')}}" alt="">
+                        <img src="{{asset('assets_user/images/about/productivity-improvement.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 m-b30 align-self-center">

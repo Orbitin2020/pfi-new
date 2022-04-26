@@ -30,6 +30,12 @@ Route::group(['prefix' => 'consulting'],function(){
     Route::get('/digital', 'User\ConsultingController@digital')->name('user.consulting.digital');
 });
 
+// Manpower Outsourcing
+Route::group(['prefix' => 'manpower'],function(){
+    Route::get('/', 'User\ManpowerController@index')->name('user.manpower');
+    Route::get('/ousourcing', 'User\ManpowerController@outsourcing')->name('user.manpower.outsourcing');
+});
+
 // News
 Route::get('/news','User\NewsController@index')->name('user.news');
 Route::get('/news/{slug}','User\NewsController@detail')->name('user.news.detail');
@@ -37,4 +43,5 @@ Route::get('/news/{slug}','User\NewsController@detail')->name('user.news.detail'
 
 // Blog
 Route::get('/blog','User\NewsController@blog')->name('user.blog');
+Route::get('/blog/{slug}','User\NewsController@blog_detail')->name('user.blog.detail');
 // End Blog

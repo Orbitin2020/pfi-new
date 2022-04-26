@@ -17,14 +17,23 @@ class NewsController extends Controller
 
     public function blog()
     {
-        return view('user.blog.index');
+        $blog = Artikel::where('kategori','blog')->paginate(5);
+        return view('user.blog.index',compact('blog'));
     }
 
     public function detail($slug)
     {
         $artikel = Artikel::where('slug',$slug)->where('kategori','news')->first();
-        $limit = Artikel::limit(3)->get();
+        $limit = Artikel::where('kategori','news')->limit(3)->get();
         return view('user.news.detail',compact('artikel','limit'));
+       
+    }
+
+    public function blog_detail($slug)
+    {
+        $artikel = Artikel::where('slug',$slug)->where('kategori','blog')->first();
+        $limit = Artikel::where('kategori','blog')->limit(3)->get();
+        return view('user.blog.detail',compact('artikel','limit'));
        
     }
 }

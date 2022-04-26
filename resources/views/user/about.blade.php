@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-head style-1">
-                        <h3 class="title m-b30">We Have a Wonderfull Team We'll Walk You Through</h3>
+                        <h3 class="title m-b30">We Have a Wonderful Team We'll Walk You Through</h3>
                         <div class="exp-row">
                             <h2 class="year">19</h2>
                             <p>YEARS OF <span>EXPRIENCE</span></p>

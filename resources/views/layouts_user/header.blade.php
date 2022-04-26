@@ -114,8 +114,8 @@
                             </li>
                             <li> <a href="javascript:void(0);">Manpower Outsourcing</a>
                                 <ul>
-                                    <li><a href="about-me.html">About Manpower Outsourcing</a></li>
-                                    <li><a href="coming-soon.html">Outsourcing Services</a></li>
+                                    <li><a href="{{route('user.manpower')}}">About Manpower Outsourcing</a></li>
+                                    <li><a href="{{route('user.manpower.outsourcing')}}">Outsourcing Services</a></li>
                                    
                                 </ul>
                             </li>
