@@ -36,6 +36,23 @@ Route::group(['prefix' => 'manpower'],function(){
     Route::get('/ousourcing', 'User\ManpowerController@outsourcing')->name('user.manpower.outsourcing');
 });
 
+
+// Training & Development
+Route::group(['prefix' => 'training'],function(){
+    Route::get('/', 'User\TrainingController@index')->name('user.training');
+    Route::get('/in-house-training-program', 'User\TrainingController@inhouse')->name('user.training.inhouse');
+    Route::get('/productivity-talent-management', 'User\TrainingController@productivity')->name('user.training.productivity');
+    Route::get('/outbound-training', 'User\TrainingController@outbound')->name('user.training.outbound');
+    Route::get('/public-training', 'User\TrainingController@public_training')->name('user.training.public');
+});
+
+// Energy Efficiency
+Route::group(['prefix' => 'energy'],function(){
+    Route::get('/', 'User\EnergyController@index')->name('user.energy');
+    // Route::get('/ousourcing', 'User\TrainingController@outsourcing')->name('user.manpower.outsourcing');
+});
+
+
 // News
 Route::get('/news','User\NewsController@index')->name('user.news');
 Route::get('/news/{slug}','User\NewsController@detail')->name('user.news.detail');

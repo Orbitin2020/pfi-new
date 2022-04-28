@@ -6,13 +6,13 @@
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(assets_user/images/bnr/bnr1.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
-                <h1>About Manpower Service</h1>
+                <h1>About Energy Efficiency Service</h1>
                 <!-- Breadcrumb Row -->
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item">Services</li>
-                        <li class="breadcrumb-item active" aria-current="page">About Manpower</li>
+                        <li class="breadcrumb-item active" aria-current="page">About Energy Efficiency</li>
                     </ul>
                 </nav>
                 <!-- Breadcrumb Row End -->
@@ -27,20 +27,19 @@
             <div class="row about-style14">
                 <div class="col-lg-6 m-b30">
                     <div class="dz-media">	
-                        <img src="{{asset('assets_user/images/about/manpower-outsourcing.png')}}" alt="">
+                        <img src="{{asset('assets_user/images/about/about35.jpg')}}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 m-b30 align-self-center">
                     <div class="about-content">
                         <div class="section-head style-1">
-                            <h2 class="title m-b20">Manpower Service</h2>
+                            <h2 class="title m-b20">Energy Efficiency Service</h2>
                         </div>
                         <div class="info">
                             <p class="m-b30" align="justify">
-                                Proven Force Indonesia always strives hard to maintain the balance between company recruitment and the needs of its employees. 
-                                Taking into account the PFI way of thinking and its intention to assist companies and employees to maintain their business activities and reposition the function of out sourcing to its original purpose to improve company productivity. 
-                                PFI, as an independent intermediary, fully understands the importance of professional mediation. 
-                                The experienced skill sets of PR team has attracted a growing number of companies to entrust their outsourcing requirements to Proven Force Indonesia.
+                                With the recent focus on Energy Efficiency (EE) as a means to minimize the consumption of the power and reduce both operational costs and environmental damage, such as pollution and climate change, PH is committed to expanding it's proven methodology to deliver productivity and savings improvements through projects designed to impact the use and consumption of energy, water and carbon.
+                                The PFI Energy Efficiency {EE} Program begins with a highly specialized audit and analysis of the management culture and operation system associated with energy, water and carbon use throughout a company operation to produce measureable and significant results in productivity and savings by enhancing the ability of management of supervisor as well as improving the performance of existing processes and equipment_ The program is a combination of addressing traditional and counterproductive methods, systems and machinery with productive techniques, efficient systems and leading-edge equipment that deliver quantifiable results with the participation and support of front line supervisors at the point of execution.
+                                through project esigned to impact the use and consumption of energy.
                             </p>
                             <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact Us</a>
                         </div>

@@ -6,13 +6,13 @@
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(/assets_user/images/bnr/bnr1.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
-                <h1>Outsourcing Service </h1>
+                <h1>In House Training Program </h1>
                 <!-- Breadcrumb Row -->
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Services</a></li>
-                        <li class="breadcrumb-item">Manpower</li>
-                        <li class="breadcrumb-item active" aria-current="page">Outsourcing Service</li>
+                        <li class="breadcrumb-item">Training & Development</li>
+                        <li class="breadcrumb-item active" aria-current="page">In House Training Program</li>
                     </ul>
                 </nav>
                 <!-- Breadcrumb Row End -->
@@ -36,104 +36,30 @@
                 <div class="col-lg-6 m-b30 align-self-center">
                     <div class="about-content">
                         <div class="section-head style-1">
-                            <h5 class="sub-title text-primary">Outsourcing Service</h5>
+                            <h5 class="sub-title text-primary">In House Training Program</h5>
                             <h3 class="title m-b20">We Are Here to Increase Your Knowledge With Experience</h3>
                             <p align="justify">
-                                PT Proven Force Indonesia will always strive hard to maintain the balance between company's requirements and the needs of it employees. 
-                                Taking into account PT Proven Force Indonesia's way of thinking and intention to assist companies and employees in maintaining their business activities and positioning the function of outsourcing to its original purposes, that of improving company productivity. PT Proven Force Indonesia as an intermediary fully comprehends the ramifications of a non-professionally conducted mediation. 
-                                The inherent professionalism of the people at PT Proven Force Indonesia has attracted companies to entrust their outsourcing activities to PT Proven Force Indonesia. Companies that outsource their activities.
+                                Is a training program held at the client's place with material that is "cutomized" in which PT. Proven Force Indonesia provides training materials as required by customers. This training can be carried out for one material or several materials at once which are comprehensive.
                             </p>
                         </div>
                         <div class="row m-b30">
-                            <div class="col-sm-4">
-                                <h5>Transparent</h5>
-                                <p>Our process is very transparent in building your dream team. All steps involve you from start to finish.
-                                </p>
+                            <h5 class="sub-title text-primary">Benefit : </h5>
+                            <div class="col-sm-6">
+                                <ul class="list-circle gray">
+                                    {{-- <li>Enhanced your management</li>
+                                    <li>Expected improvement to the project</li>
+                                    <li>Long term relationship</li> --}}
+                                </ul>
                             </div>
-                            <div class="col-sm-4">
-                                <h5>You Control Everything</h5>
-                                <p>Cooperate with us in all things to build your management team. We are the right partner for your business.
-
-                                </p>
-                            </div>
-                            <div class="col-sm-4">
-                                <h5>Customised To Your Needs</h5>
-                                <p>We provide solutions for small companies as well as large companies looking to expand quickly.
-                                </p>
-                            </div>
+                            
                         </div>
+                        <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-     <!-- About -->
-    <section class="content-inner">
-        <div class="container">
-            <div class="row about-style12">
-                <div class="col-lg-5 m-b30 align-self-center">
-                    <div class="about-content">
-                        <div class="section-head style-1">
-                            <h5 class="sub-title text-primary">What We do </h5>
-                            <h4 class="title m-b20">Benefits To Have Us As Your Outsourcing Partner:
-                            </h4>
-                            <div class="row m-b30">
-                                <div class="col-sm-6">
-                                    <ul class="list-circle gray">
-                                        <li>Increase company focus</li>
-                                        <li>Internal Resources can be utilized for other activities
-                                        </li>
-                                        <li>Obtain resources not readily available internally</li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="list-circle gray">
-                                        <li>Obtain resources not readily available internally</li>
-                                        <li>Better Industrial Relations handling
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <h4 class="sub-title text-primary">Types of Jobs That Can Be Outsourced:</h4> 
-                        <div class="row m-b30">
-                            <div class="col-sm-6">
-                                <ul class="list-circle gray">
-                                    <li>Top Management Executives (Interim Program)</li>
-                                    <li>Middle Management Executives</li>
-                                    <li>Admin Staffs, Receptionists, Secretaries</li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="list-circle gray">
-                                    <li>Core Business Workers</li>
-                                    <li>Non-Core Business Workers </li>
-                                    <li>Others (Based OnYour Needs) </li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-7 m-b30">
-                    <div class="dz-media">	
-                        <img src="{{asset('assets_user/images/about/about19.jpg')}}" alt="">
-                        {{-- <ul class="list-arrow-right-circle white">
-                            <li><h5 class="sub-title text-primary">Benefits </h5></li>
-                            <li>Enhanced your management</li>
-                            <li>Return of investment (ROI) between 100% - 250% annually</li>
-                            <li>Guarantee and expected improvement to the project</li>
-                            <li>Long term relationship </li>
-                        </ul> --}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Counter -->
     <section class="content-inner bg-img-fix overlay-primary-dark" style="background-image: url(/assets_user/images/background/bg1.jpg);">
@@ -204,11 +130,6 @@
             <a href="https://www.youtube.com/watch?v=_FRZVScwggM" class="popup-youtube play-btn6 m-auto"><i class="fa fa-play"></i></a>
         </div>
     </section>
-    
-   
-    
- 
-    
 
 </div>
 @endsection

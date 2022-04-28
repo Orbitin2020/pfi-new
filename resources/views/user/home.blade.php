@@ -86,8 +86,10 @@
                     <div class="about-content aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                         <div class="section-head style-1">
                             <h6 class="sub-title text-primary">Welcome to Proven Force Indonesia.</h6>
-                            <h3 class="title m-b20">We Are Here to Increase your Knowlege With Experience</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration which don’t look even slightly believable. It Is A Long Established Fact.</p>
+                            <h3 class="title m-b20">WHY CHOOSE US?</h3>
+                            <p>
+                                Extensive experienced in the training industry for 17 years, A variety of methods not offered by other providers, Customized training materials to suit the client needs, Equipped with a consultancy division to optimize added value for the company recipient.
+                            </p>
                         </div>
                         <a href="" class="btn btn-primary">READ MORE <i class="fas fa-long-arrow-alt-right m-l15"></i></a>
                     </div>
@@ -151,11 +153,11 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-cogwheel"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Consulting</a></h4>
+                                    <h4 class="dz-title"><a href="{{route('user.consulting')}}">Consulting</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
-                                    <a class="btn btn-primary d-block" href="services.html">READ MORE</a>
+                                    <a class="btn btn-primary d-block" href="{{route('user.consulting')}}">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -168,11 +170,11 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-engineer-1"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Manpower Outsourcing</a></h4>
+                                    <h4 class="dz-title"><a href="{{route('user.manpower')}}">Manpower Outsourcing</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
-                                    <a class="btn btn-primary d-block" href="services.html">READ MORE</a>
+                                    <a class="btn btn-primary d-block" href="{{route('user.manpower')}}">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -185,11 +187,11 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-robot-arm"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Training & Development</a></h4>
+                                    <h4 class="dz-title"><a href="{{route('user.training')}}">Training & Development</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
-                                    <a class="btn btn-primary d-block" href="services.html">READ MORE</a>
+                                    <a class="btn btn-primary d-block" href="{{route('user.training')}}">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -202,11 +204,11 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-robot-arm"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="services.html">Energy Efficiency</a></h4>
+                                    <h4 class="dz-title"><a href="{{route('user.energy')}}">Energy Efficiency</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich that capitalizes</p>
                                 </div>
                                 <div class="dz-bottom">
-                                    <a class="btn btn-primary d-block" href="services.html">READ MORE</a>
+                                    <a class="btn btn-primary d-block" href="{{route('user.energy')}}">READ MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -231,11 +233,16 @@
                             </div>
                             <div class="testimonial-info">
                                 <div class="info">
-                                    <h5 class="testimonial-name">Fig Nelson</h5> 
-                                    <span class="testimonial-position">Marketing</span> 
+                                    <h5 class="testimonial-name">Kusuma Widjaja</h5> 
+                                    <span class="testimonial-position">Director, Bentoel Prima</span> 
                                 </div>
                                 <div class="testimonial-text">
-                                    <p>“Curabitur a urna vitae nisl fringilla porta non eu dui. Suspendisse volutpat neque mauris, neque imperdiet dignissim. Sed ut interdum mi, in ullamcorper nisi”.</p>
+                                    <p>“We are focused towards achieving your goals,
+                                        Our supervisors have better understand¬ing of their roles and
+                                        responsibilities.
+                                        As a result of these behavior changes. we have achieved :
+                                        Improvement in waste,We reduce the waste level around 15% of their prior achievment improvement in machinery,We achieve about 18% improvement in productivity of the machines
+                                        ”.</p>
                                 </div>
                             </div>
                         </div>
@@ -247,11 +254,15 @@
                             </div>
                             <div class="testimonial-info">
                                 <div class="info">
-                                    <h5 class="testimonial-name">John Doe</h5> 
-                                    <span class="testimonial-position">Marketing</span> 
+                                    <h5 class="testimonial-name">Herry Hernawan</h5> 
+                                    <span class="testimonial-position">President Director, Temprint</span> 
                                 </div>
                                 <div class="testimonial-text">
-                                    <p>“Curabitur a urna vitae nisl fringilla porta non eu dui. Suspendisse volutpat neque mauris, neque imperdiet dignissim. Sed ut interdum mi, in ullamcorper nisi”.</p>
+                                    <p>“The savings and productivity improve¬ment factors above greatly
+                                        affect the overall performance and profit¬ability of PT Temprint.
+                                        In the end we were able to record profits in the last four months.
+                                    ”.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -263,11 +274,15 @@
                             </div>
                             <div class="testimonial-info">
                                 <div class="info">
-                                    <h5 class="testimonial-name">Douglas Lyphe</h5> 
-                                    <span class="testimonial-position">Marketing</span> 
+                                    <h5 class="testimonial-name">Sardar Ahmed</h5> 
+                                    <span class="testimonial-position">Operations Director, Frisian Flag Indonesia</span> 
                                 </div>
                                 <div class="testimonial-text">
-                                    <p>“Curabitur a urna vitae nisl fringilla porta non eu dui. Suspendisse volutpat neque mauris, neque imperdiet dignissim. Sed ut interdum mi, in ullamcorper nisi”.</p>
+                                    <p>“The main objective of this project was meant to be a behavior
+                                        change program and through the above has resulted in : Improvement in machine productivity by 18%,Reduction in raw material losses by 14%,Reduction in failure by manufacturing by 52%.
+                                        I am pleased to inform you that the proj-ect is successful and
+                                        meets our expectation
+                                        ”.</p>
                                 </div>
                             </div>
                         </div>
@@ -391,8 +406,8 @@
                                     </ul>
                                 </div>
                                 <div class="dz-content">
-                                    <h3 class="dz-name">Mike Dooley</h3>
-                                    <h6 class="dz-position text-primary">Contractor</h6>
+                                    <h3 class="dz-name">Jimmy Gani</h3>
+                                    <h6 class="dz-position text-primary">Founder & Chairman</h6>
                                 </div>
                             </div>
                         </div>
@@ -407,8 +422,8 @@
                                     </ul>
                                 </div>
                                 <div class="dz-content">
-                                    <h3 class="dz-name">Daniel Orson</h3>
-                                    <h6 class="dz-position text-primary">Contractor</h6>
+                                    <h3 class="dz-name">Triharto Bintama</h3>
+                                    <h6 class="dz-position text-primary">Director of Manpower</h6>
                                 </div>
                             </div>
                         </div>
@@ -423,8 +438,56 @@
                                     </ul>
                                 </div>
                                 <div class="dz-content">
-                                    <h3 class="dz-name">Colin Jameson</h3>
-                                    <h6 class="dz-position text-primary">Contractor</h6>
+                                    <h3 class="dz-name">Baihaki Fauzi</h3>
+                                    <h6 class="dz-position text-primary">Director of Consulting</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">Setiyo Widodo</h3>
+                                    <h6 class="dz-position text-primary">Associate Director of Consulting</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">Hendradi Aspari</h3>
+                                    <h6 class="dz-position text-primary">Associate Director of Business Development</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">David Finneren</h3>
+                                    <h6 class="dz-position text-primary">Director of Energy Efficiency</h6>
                                 </div>
                             </div>
                         </div>
