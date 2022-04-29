@@ -121,17 +121,17 @@
                             </li>
                             <li> <a href="javascript:void(0);">Training & Development</a>
                                 <ul>
-                                    <li><a href="about-me.html">About Training & Development</a></li>
-                                    <li><a href="about-me.html">In House Training Program</a></li>
-                                    <li><a href="about-me.html">Productivity Talent Managenent</a></li>
-                                    <li><a href="about-me.html">Outbound Training</a></li>
-                                    <li><a href="about-me.html">Public Training</a></li>
+                                    <li><a href="{{route('user.training')}}">About Training & Development</a></li>
+                                    <li><a href="{{route('user.training.inhouse')}}">In House Training Program</a></li>
+                                    <li><a href="{{route('user.training.productivity')}}">Productivity Talent Managenent</a></li>
+                                    <li><a href="{{route('user.training.outbound')}}">Outbound Training</a></li>
+                                    <li><a href="{{route('user.training.public')}}">Public Training</a></li>
                                     
                                 </ul>
                             </li>
                             <li> <a href="javascript:void(0);">Energy Efficiency</a>
                                 <ul>
-                                    <li><a href="about-me.html">About Energy Efficiency</a></li>
+                                    <li><a href="{{route('user.energy')}}">About Energy Efficiency</a></li>
                                     <li><a href="pricing.html">List Sub Menu</a></li>
                                     
                                 </ul>

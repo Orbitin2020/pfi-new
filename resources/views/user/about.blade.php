@@ -38,6 +38,24 @@
                     <a href="{{route('user.contact')}}" class="btn btn-primary btn-border btn-border m-r10 m-b10">Contact Us</a>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-head style-1">
+                        <h3 class="title m-b30">VISION</h3>
+                        <div class="exp-row">
+                            <h5 class="m-b30" align="justify">Become the leader in the facilitation of profitability improvement and performance enhancement for all types of organizations</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-head style-1">
+                        <h3 class="title m-b30">MISSION</h3>
+                        <div class="exp-row">
+                            <h5 class="m-b30" align="justify">Facilitating organizations to run their operations more efficiently and effectively through improved management capability</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="swiper-container content-slider">
                 <div class="swiper-wrapper">
@@ -88,6 +106,7 @@
             </div>				
         </div>
     </section>
+    
     <section class="content-inner-1">
         <div class="container">
             <div class="section-head text-center" >
@@ -220,10 +239,10 @@
                 <h2 class="title m-b20">Team & Advisory board</h2>
             </div>
             <div class="team-swiper-1 btn-center-lr">
-                <div class="swiper-container team-slider ">
+                <div class="swiper-container team-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="dz-team style-1 text-center m-b10">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                 <div class="dz-media">
                                     <img src="{{asset('assets_user/images/team/pic1.jpg')}}" alt="">
                                     <ul class="team-social">
@@ -233,13 +252,13 @@
                                     </ul>
                                 </div>
                                 <div class="dz-content">
-                                    <h3 class="dz-name">Mike Dooley</h3>
-                                    <h6 class="dz-position text-primary">Contractor</h6>
+                                    <h3 class="dz-name">Jimmy Gani</h3>
+                                    <h6 class="dz-position text-primary">Founder & Chairman</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="dz-team style-1 text-center m-b10">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                                 <div class="dz-media">
                                     <img src="{{asset('assets_user/images/team/pic2.jpg')}}" alt="">
                                     <ul class="team-social">
@@ -249,13 +268,13 @@
                                     </ul>
                                 </div>
                                 <div class="dz-content">
-                                    <h3 class="dz-name">Daniel Orson</h3>
-                                    <h6 class="dz-position text-primary">Contractor</h6>
+                                    <h3 class="dz-name">Triharto Bintama</h3>
+                                    <h6 class="dz-position text-primary">Director of Manpower</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="dz-team style-1 text-center m-b10">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
                                     <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
                                     <ul class="team-social">
@@ -265,8 +284,56 @@
                                     </ul>
                                 </div>
                                 <div class="dz-content">
-                                    <h3 class="dz-name">Colin Jameson</h3>
-                                    <h6 class="dz-position text-primary">Contractor</h6>
+                                    <h3 class="dz-name">Baihaki Fauzi</h3>
+                                    <h6 class="dz-position text-primary">Director of Consulting</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">Setiyo Widodo</h3>
+                                    <h6 class="dz-position text-primary">Associate Director of Consulting</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">Hendradi Aspari</h3>
+                                    <h6 class="dz-position text-primary">Associate Director of Business Development</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">David Finneren</h3>
+                                    <h6 class="dz-position text-primary">Director of Energy Efficiency</h6>
                                 </div>
                             </div>
                         </div>
