@@ -1,4 +1,3 @@
-
 <nav id="sidebar">
     <!-- Sidebar Content -->
     <div class="sidebar-content enable-cookies">
@@ -27,9 +26,12 @@
                 <!-- Logo -->
                 <div class="content-header-item">
                     <a class=" font-w700" href="javascript:void(0)">
-                        {{-- <img src="{{asset('assets/media/favicons/favicon2.png')}}" alt="" style="max-height: 45%"> --}}
-                        {{-- <img class="" src="{{asset('assets/media/favicons/ugl1.png')}}" alt="" style="max-height: 30px"> --}}
-                        <span class="font-size-xl text-dual-primary-dark">PFI</span><span class="font-size-xl text-primary">CMS</span>
+                        {{-- <img src="{{asset('assets/media/favicons/favicon2.png')}}" alt="" style="max-height: 45%">
+                        --}}
+                        {{-- <img class="" src="{{asset('assets/media/favicons/ugl1.png')}}" alt=""
+                            style="max-height: 30px"> --}}
+                        <span class="font-size-xl text-dual-primary-dark">PFI</span><span
+                            class="font-size-xl text-primary">CMS</span>
                     </a>
                 </div>
                 <!-- END Logo -->
@@ -73,7 +75,7 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
-                        
+
                     </li>
                 </ul>
             </div>
@@ -82,33 +84,40 @@
         <!-- END Side User -->
         <div class="content-side content-side-full">
             <ul class="nav-main">
-                <li>
+                {{-- <li>
                     <a class="active"><i class="si si-home"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                </li> --}}
+                <li>
+                    <a href="{{ url('admin/dashboard') }}" class="active"><i class="si si-home"></i><span
+                            class="sidebar-mini-hide">Dashboard</span></a>
                 </li>
                 <li>
-                  <a href={{route('admin.artikel.index')}} class="active"><i class="fa fa-newspaper-o"></i><span class="sidebar-mini-hide">News</span></a>
+                    <a href={{route('admin.artikel.index')}} class="active"><i class="fa fa-newspaper-o"></i><span
+                            class="sidebar-mini-hide">News</span></a>
                 </li>
                 <li>
-                  <a class="nav-submenu active" data-toggle="nav-submenu"><i class="fa fa-file-image-o"></i><span class="sidebar-mini-hide">Galeri</span></a>
-                  <ul>
-                      <li>
-                          <a href="{{route('admin.katgale.index')}}">Image Category</a>
-                      </li>
-                      <li>
-                          <a href="{{route('admin.galeri.index')}}">Image</a>
-                      </li>
-                  </ul>
+                    <a class="nav-submenu active" data-toggle="nav-submenu"><i class="fa fa-file-image-o"></i><span
+                            class="sidebar-mini-hide">Galeri</span></a>
+                    <ul>
+                        <li>
+                            <a href="{{route('admin.katgale.index')}}">Image Category</a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.galeri.index')}}">Image</a>
+                        </li>
+                    </ul>
                 </li>
                 @hasrole('super-admin')
                 <li>
-                  <a href={{route('user.index')}} class="active"><i class="fa fa-user"></i><span class="sidebar-mini-hide">Manajemen User Admin</span></a>
+                    <a href={{route('user.index')}} class="active"><i class="fa fa-user"></i><span
+                            class="sidebar-mini-hide">Manajemen User Admin</span></a>
                 </li>
                 @else
                 @endhasrole
             </ul>
         </div>
         <!-- END Side Navigation -->
-        
+
     </div>
     <!-- Sidebar Content -->
 </nav>

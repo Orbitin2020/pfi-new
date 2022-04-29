@@ -4,17 +4,39 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Admin\User;
+use App\Models\User;
+use App\Models\Roles;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Facades\Hash;
+use Symfony\Component\HttpFoundation\Response;
 use Auth;
+use DataTables;
+use Validator;
 
 class UserController extends Controller
 {
     public function index()
     {
-        return view('admin.user.index');
+        $role = Roles::get();
+        // debugbar()->info($role);
+        return view('admin.user.index', compact('role'));
+    }
+
+    public function getData()
+    {
+        $query = User::with('roles')->get();
+        // debugbar()->info($query);
+        // $query = User::get();
+        return DataTables::of($query)
+            ->addIndexColumn()
+            ->addColumn('Actions', function($query) {
+                $html = '<button href="javascript:void(0)" data-id="' . $query->id . '" id="editAccount" type="button" class="edit btn btn-primary btn-sm m-1" tittle="Edit"><i class="fa fa-pencil" ></i></button> <button href="javascript:void(0)" data-id="' . $query->id . '" id="deleteAccount" type="button" class="delete btn btn-danger btn-sm m-1" tittle="Hapus"><i class="fa fa-trash" ></i></button>';
+
+                return $html;
+            })
+            ->rawColumns(['Actions'])
+            ->make(true);
     }
 
     public function getUser()
@@ -39,24 +61,75 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
+        $data = $request->all();
+        $validator = Validator::make($data, [
+            'name' => 'required', 
+            'username' => 'required',
+            'email' => 'required|unique:users',
+            'password' => 'required',
+        ]);
+
+        if($validator->fails()) {
+            return response()->json([
+                'status' => 400,
+                'message' => 'Email Sudah terdaftar',
+            ]);
+        }
+
         $user = new User();
 
-        $user->name = $request->get('name');
-        $user->username = $request->get('username');
-        $user->email = $request->get('email');
-        $user->password = Hash::make($request->get('password'));
-        $user->assignRole($request->get('role'));
+        $user->name = $data['name'];
+        $user->username = $data['username'];
+        $user->email = $data['email'];
+        $user->password = Hash::make($data['password']);
+        $user->assignRole($data['role']);
         $user->save();
 
         if($user){
             return response()->json([
-                'success'   => true,
+                'status' => 200,
                 'message'   => 'User Berhasil Di Simpan',
-
-            ],200);
+            ]);
         }else{
             return response()->json([
-                'success'   => false,
+                'status' => 500,
+                'message'   => 'User Gagal Di Simpan',
+            ]);
+        }
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = $request->all();
+        $validator = Validator::make($data, [
+            'name' => 'required', 
+            'username' => 'required',
+            'email' => 'required|unique:users',
+        ]);
+
+        if($validator->fails()) {
+            return response()->json([
+                'status' => 400,
+                'message' => 'Email Sudah terdaftar',
+            ]);
+        }
+
+        $user = User::where('id', $id)->first();
+        
+        $user->name = $data['name'];
+        $user->email = $data['email'];
+        $user->username = $data['username'];
+        $user->assignRole($data['role']);
+        $user->update();
+
+        if($user){
+            return response()->json([
+                'status' => 200,
+                'message'   => 'User Berhasil Di Simpan',
+            ]);
+        }else{
+            return response()->json([
+                'status' => 500,
                 'message'   => 'User Gagal Di Simpan',
             ]);
         }
@@ -64,60 +137,34 @@ class UserController extends Controller
 
     public function edit($id)
     {
-        $user = User::where('id',$id)->first();
-        if($user)
-        {
+        $user = User::where('id', $id)->first();
+        if($user) {
             return response()->json([
-                'success'   => true,
                 'message'   => 'Edit User',
                 'data'      => $user
             ],200);
-        }else{
+        } else {
             return response()->json([
-                'success'   => false,
                 'message'   => 'Edit Gagal'
             ]);
         }
     }
 
-    public function update(Request $request,$id)
-    {
-        $user =  User::find($id);
-        $user->name = $request->get('name');
-        $user->email = $request->get('email');
-        $user->assignRole($request->get('role'));
-        $user->update();
-
-        if($user){
-            return response()->json([
-                'success' => true,
-                'message' => 'User Berhasil Di Update',
-                'data'    => $user
-            ],200);
-
-        }else{
-            return response()->json([
-                'succes' => false,
-                'message' => 'User Gagal Di Update'
-            ], 400);
-        }
-    }
-
     public function delete($id)
     {
-        $user = User::findOrFail($id);
+        $user = User::where('id', $id)->first();
         $user->delete();
+
         if($user){
             return response()->json([
-                'success' => true,
-                'message' => 'User Berhasil Di Hapus',
-            ],200);
-
+                'status' => 200,
+                'message'   => 'User Berhasil Di Hapus',
+            ]);
         }else{
             return response()->json([
-                'succes' => false,
-                'message' => 'User Gagal Di Hapus'
-            ], 400);
+                'status' => 500,
+                'message'   => 'User Gagal Di Hapus',
+            ]);
         }
     }
 }

@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin'], function () {
     Auth::routes();
+
+    Route::group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'dashboard'], function() {
+        Route::get('/', 'Admin\DashboardController@index');
+    });
     
     Route::group(['middleware' => ['role:super-admin|admin'],'prefix' => 'artikel'],function(){
         Route::get('/', 'Admin\ArtikelController@index')->name('admin.artikel.index');
@@ -46,7 +50,11 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::group(['middleware' => ['role:super-admin'],'prefix' => 'provenadmin'],function(){
         Route::get('/user','Admin\UserController@index')->name('user.index');
-     
+        Route::get('/getData', 'Admin\UserController@getData')->name('user.getData');
+        Route::post('/store', 'Admin\UserController@store')->name('user.store');
+        Route::get('/edit/{id}', 'Admin\UserController@edit');
+        Route::post('/update/{id}', 'Admin\UserController@update');
+        Route::delete('/delete/{id}', 'Admin\UserController@delete');
     });
     
 });
