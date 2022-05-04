@@ -48,8 +48,10 @@
                         <div class="form-group">
                             <label for="nama">Kategori</label>
                             <div class="s_kategori">
-                                <select class="js-select2 form-control" id="kategori" name="kategori" style="width: 100%;" data-placeholder="Choose..">
-                                    <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                <select class="js-select2 form-control" id="kategori" name="kategori"
+                                    style="width: 100%;" data-placeholder="Choose..">
+                                    <option></option>
+                                    <!-- Required for data-placeholder attribute to work with Select2 plugin -->
                                     <option value="news">News</option>
                                     <option value="blog">Blog</option>
                                 </select>
@@ -58,7 +60,7 @@
                         <div class="">
                             <div class="form-group ">
                                 <label class="" for="gambar">gambar</label>
-                                <input type="file" class="form-control" name="gambar" id="gambar" >
+                                <input type="file" class="form-control" name="gambar" id="gambar">
                             </div>
                         </div>
                         <div class="col-xl-12">
@@ -68,7 +70,8 @@
                         </div>
                         <div class="form-group">
                             <label for="description">Detail</label>
-                            <textarea name="detail" id="detail" class="form-control" cols="30" rows="10" placeholder="Detail News Atau Blog" ></textarea>
+                            <textarea name="detail" id="detail" class="form-control" cols="30" rows="10"
+                                placeholder="Detail News Atau Blog"></textarea>
                         </div>
                     </form>
                 </div>

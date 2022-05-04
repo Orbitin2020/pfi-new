@@ -47,20 +47,23 @@
                         </div>
                         <div class="form-group">
                             <label for="nama">Deskripsi</label>
-                            <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi Gambar ">
+                            <input type="text" class="form-control" id="deskripsi" name="deskripsi"
+                                placeholder="Deskripsi Gambar ">
                         </div>
                         <div class="form-group">
                             <label for="nama">Kategori</label>
                             <div class="s_kategori">
-                                <select class="js-select2 form-control" id="kategori" name="kategori" style="width: 100%;" data-placeholder="Choose..">
-                                    <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                                <select class="js-select2 form-control" id="kategori" name="kategori"
+                                    style="width: 100%;" data-placeholder="Choose..">
+                                    <option></option>
+                                    <!-- Required for data-placeholder attribute to work with Select2 plugin -->
                                 </select>
                             </div>
                         </div>
                         <div class="">
                             <div class="form-group ">
                                 <label class="" for="gambar">gambar</label>
-                                <input type="file" class="form-control" name="gambar" id="gambar" >
+                                <input type="file" class="form-control" name="gambar" id="gambar">
                             </div>
                         </div>
                         <div class="col-xl-12">

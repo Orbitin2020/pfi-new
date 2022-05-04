@@ -16,8 +16,26 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'admin'], function () {
     Auth::routes();
 
-    Route::group(['middleware' => ['role:super-admin|admin'], 'prefix' => 'dashboard'], function() {
+    Route::group(['middleware' => ['role:super-admin|admin', 'auth'], 'prefix' => 'dashboard'], function() {
         Route::get('/', 'Admin\DashboardController@index');
+    });
+
+    Route::group(['middleware' => ['role:super-admin', 'auth'], 'prefix' => 'client'], function() {
+        Route::get('/', 'Admin\ClientController@index');
+        Route::get('/getData', 'Admin\ClientController@getData');
+        Route::get('/edit/{id}', 'Admin\ClientController@edit');
+        Route::post('/add', 'Admin\ClientController@store');
+        Route::post('/update/{id}', 'Admin\ClientController@update');
+        Route::delete('/delete/{id}', 'Admin\ClientController@delete');
+    });
+
+    Route::group(['middleware' => ['role:super-admin', 'auth'], 'prefix' => 'clientCategory'], function() {
+        Route::get('/', 'Admin\ClientCategoryController@index');
+        Route::get('/getData', 'Admin\ClientCategoryController@getData');
+        Route::get('/edit/{id}', 'Admin\ClientCategoryController@edit');
+        Route::post('/add', 'Admin\ClientCategoryController@store');
+        Route::put('/update/{id}', 'Admin\ClientCategoryController@update');
+        Route::delete('/delete/{id}', 'Admin\ClientCategoryController@destroy');
     });
     
     Route::group(['middleware' => ['role:super-admin|admin'],'prefix' => 'artikel'],function(){

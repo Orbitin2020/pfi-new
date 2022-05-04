@@ -1,13 +1,14 @@
 <!-- Meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content=""/>
-<meta name="author" content=""/>
-<meta name="robots" content=""/>
-<meta name="description" content="Proven Force Indonesia"/>
-<meta property="og:title" content="Proven Force Indonesia"/>
-<meta property="og:description" content="Industry – Factory & Industrial HTML Template is particularly designed for factory, industry, architecture, plants, mechanical, power and energy Business Template."/>
-<meta property="og:image" content="{{asset('assets_user/images/logo/logo-pfi.jpg')}}"/>
+<meta name="keywords" content="Proven Force Indonesia" />
+<meta name="author" content="" />
+<meta name="robots" content="" />
+<meta name="description" content="Proven Force Indonesia" />
+<meta property="og:title" content="Proven Force Indonesia" />
+<meta property="og:description"
+    content="Industry – Factory & Industrial HTML Template is particularly designed for factory, industry, architecture, plants, mechanical, power and energy Business Template." />
+<meta property="og:image" content="{{asset('assets_user/images/logo/logo-pfi.jpg')}}" />
 <meta name="format-detection" content="telephone=no">
 
 <!-- Mobile Specific -->
@@ -33,4 +34,6 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">

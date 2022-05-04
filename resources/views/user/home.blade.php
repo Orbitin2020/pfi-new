@@ -5,8 +5,9 @@
     <div class="main-slider2">
         <div class="swiper-container main-slider-2 banner-inner">
             <div class="swiper-wrapper">
+                {{-- Ukuran Image 1920px - 1080 --}}
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/1000/tech); background-size: cover;">
+                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -27,7 +28,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/1000/arch); background-size: cover;">
+                    style="background-image: url(https://placeimg.com/1000/500/arch); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -56,7 +57,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/1000/tech); background-size: cover;">
+                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -69,7 +70,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/1000/tech); background-size: cover;">
+                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -82,7 +83,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000px/1000px/nature;); background-size: cover;">
+                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -169,7 +170,7 @@
     </section>
 
     <section class="content-inner-2 service-wrapper-2 overlay-black-dark"
-        style="background-image:url('assets_user/images/background/bg7.jpg');background-size: cover;">
+        style="background-image:url('https://placeimg.com/1000/500/tech');background-size: cover;">
         <div class="container">
             <div class="section-head style-1 text-center aos-item" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
@@ -183,13 +184,13 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="400">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/services/pic1.jpg')}}" alt="">
+                                    {{-- <img src="{{asset('assets_user/images/services/pic1.jpg')}}" alt=""> --}}
+                                    <img src="https://placeimg.com/450/195/tech" alt="">
                                 </div>
                                 <div class="dz-info" data-num="01">
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-cogwheel"></i>
                                     </div>
-
                                     <h4 class="dz-title"><a href="{{route('user.consulting')}}">Consulting</a></h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich
                                         that capitalizes</p>
@@ -203,7 +204,8 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="600">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/services/pic2.jpg')}}" alt="">
+                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    {{-- <img src="{{asset('assets_user/images/services/pic2.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="02">
                                     <div class="icon-lg m-b20 text-primary">
@@ -224,7 +226,8 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt="">
+                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    {{-- <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="03">
                                     <div class="icon-lg m-b20 text-primary">
@@ -245,7 +248,8 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt="">
+                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    {{-- <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="04">
                                     <div class="icon-lg m-b20 text-primary">

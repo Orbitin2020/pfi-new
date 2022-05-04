@@ -107,6 +107,18 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a class="nav-submenu active" data-toggle="nav-submenu"><i class="fa fa-group"></i><span
+                            class="sidebar-mini-hide">Client</span></a>
+                    <ul>
+                        <li>
+                            <a href="{{ url('admin/clientCategory') }}">Client Category</a>
+                        </li>
+                        <li>
+                            <a href="{{ url('admin/client') }}">Client</a>
+                        </li>
+                    </ul>
+                </li>
                 @hasrole('super-admin')
                 <li>
                     <a href={{route('user.index')}} class="active"><i class="fa fa-user"></i><span

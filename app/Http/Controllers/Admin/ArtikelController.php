@@ -75,7 +75,6 @@ class ArtikelController extends Controller
             'gambar'    => $name,
             'kategori'  => $request->input('kategori'),
             'admin_id'  => Auth::user()->id,
-
         ]);
         return response()->json([
             'message' => 'Artikel Berhasil Di Tambah'

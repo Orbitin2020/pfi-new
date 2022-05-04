@@ -18,6 +18,7 @@ class NewsController extends Controller
     public function blog()
     {
         $blog = Artikel::where('kategori','blog')->paginate(5);
+        // debugbar()->info($blog);
         return view('user.blog.index',compact('blog'));
     }
 

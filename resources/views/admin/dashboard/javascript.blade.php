@@ -5,8 +5,21 @@
         data: {
             labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'],
             datasets: [{
-                label: '# Article',
-                data: [12, 19, 3, 5, 2, 3, 3, 5, 6, 7, 8, 13],
+                label: '# Article {{ $tahun }}',
+                data: [
+                    {!! json_encode($jan) !!}, 
+                    {!! json_encode($feb) !!}, 
+                    {!! json_encode($mar) !!}, 
+                    {!! json_encode($apr) !!}, 
+                    {!! json_encode($mei) !!}, 
+                    {!! json_encode($jun) !!}, 
+                    {!! json_encode($jul) !!}, 
+                    {!! json_encode($aug) !!}, 
+                    {!! json_encode($sep) !!}, 
+                    {!! json_encode($okt) !!}, 
+                    {!! json_encode($nov) !!}, 
+                    {!! json_encode($des) !!}
+                ],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
