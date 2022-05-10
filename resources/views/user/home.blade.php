@@ -7,7 +7,7 @@
             <div class="swiper-wrapper">
                 {{-- Ukuran Image 1920px - 1080 --}}
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
+                    style="background-image: url(assets_user/images/bnr/bnr1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/500/arch); background-size: cover;">
+                    style="background-image: url('assets_user/images/bnr/bnr1.jpg'); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
+                    style="background-image: url('assets_user/images/bnr/bnr1.jpg'); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
+                    style="background-image: url(asset('assets_user/images/bnr/bnr1.jpg')); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(https://placeimg.com/1000/500/tech); background-size: cover;">
+                    style="background-image: url(assets_user/images/bnr/bnr1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
