@@ -7,12 +7,15 @@
             <div class="swiper-wrapper">
                 {{-- Ukuran Image 1920px - 1080 --}}
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/images/bnr/bnr1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title" data-swiper-parallax="-500">PFI Delivers Outstanding Results</h1>
-                                <p data-swiper-parallax="-1000">
+                                <h4 class="title text-dark" data-swiper-parallax="-500">PFI
+                                    Delivers <br> Outstanding
+                                    Results
+                                </h4>
+                                <p class="text-dark" data-swiper-parallax="-1000">
                                     Since its establishment in 2003 PT Proven Force Indonesia converted opportunities
                                     into success story. Our clients praised PT Proven Force Indonesia Team for being
                                     able to work well with their organizations and deliver the result. Testimonies from
@@ -21,33 +24,25 @@
                                     industries, PT Proven Force Indonesia has proven itself a worthy partner for
                                     companies who are looking toward continuous improvement.
                                 </p>
-                                <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
+                                <a data-swiper-parallax=" -1500" href="" class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url('assets_user/images/bnr/bnr1.jpg'); background-size: cover;">
+                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title" data-swiper-parallax="-500">Consulting Services</h1>
-                                <p data-swiper-parallax="-1000">
+                                <h1 class="title text-dark" data-swiper-parallax="-500">Consulting Services</h1>
+                                <p class="text-dark" data-swiper-parallax="-1000">
                                     Transformation of total management culture and operation system, which will produce
                                     measurable result in productivity improvement by enchancing the managerial ability
                                     of corporations, management, replace entrenched and counterproductive methods with
                                     productive and profitable techniques and install a system that gives front line
                                     supervisors control at the point of execution
-                                <ul data-swiper-parallax="-1000">
-                                    <div data-swiper-parallax="-1000" style="color: white">Benefit :</div>
-                                    <li data-swiper-parallax="-1000" style="color: white">Enhanced your management</li>
-                                    <li data-swiper-parallax="-1000" style="color: white">Return of investment (ROI)
-                                        between 100% - 250% annually</li>
-                                    <li data-swiper-parallax="-1000" style="color: white">Guarantee and expected
-                                        improvement to the project</li>
-                                    <li data-swiper-parallax="-1000" style="color: white">Long term relationship</li>
-                                </ul>
+
                                 </p>
                                 <a data-swiper-parallax="-1500" href="{{route('user.about')}}"
                                     class="btn btn-primary">READ MORE <i
@@ -57,12 +52,12 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url('assets_user/images/bnr/bnr1.jpg'); background-size: cover;">
+                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title" data-swiper-parallax="-500">Manpower Outsourcing</h1>
-                                <p data-swiper-parallax="-1000">MPO Description</p>
+                                <h1 class="title text-dark" data-swiper-parallax="-500">Manpower Outsourcing</h1>
+                                <p class="text-dark" data-swiper-parallax="-1000">MPO Description</p>
                                 <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
@@ -70,12 +65,19 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(asset('assets_user/images/bnr/bnr1.jpg')); background-size: cover;">
+                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title" data-swiper-parallax="-500">Training & Development</h1>
-                                <p data-swiper-parallax="-1000">Training & Development Description</p>
+                                <h1 class="title text-dark" data-swiper-parallax="-500">Training & Development</h1>
+                                <p class="text-dark" data-swiper-parallax="-1000">Human resources have a very large role
+                                    in increasing productivity and maintaining the company's survival on an ongoing
+                                    basis. Good human resources will be able to run the company as optimally as possible
+                                    so that the company can continue to
+                                    grow and develop to strengthen the existing business. Reliable human resources will
+                                    be the driving force for a company
+                                    by optimizing all existing resources, including human resources related to
+                                    technology.</p>
                                 <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
@@ -83,12 +85,12 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/images/bnr/bnr1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title" data-swiper-parallax="-500">Energy Efficiency</h1>
-                                <p data-swiper-parallax="-1000">Energy Efficiency Description</p>
+                                <h1 class="title text-dark" data-swiper-parallax="-500">Energy Efficiency</h1>
+                                <p class="text-dark" data-swiper-parallax="-1000">Energy Efficiency Description</p>
                                 <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
@@ -112,7 +114,7 @@
                             <h6 class="sub-title text-primary">Welcome to Proven Force Indonesia.</h6>
 
                             <h3 class="title m-b20">WHY CHOOSE US?</h3>
-                            <p>
+                            <p class="text-dark">
                                 Extensive experienced in the training industry for 17 years, A variety of methods not
                                 offered by other providers, Customized training materials to suit the client needs,
                                 Equipped with a consultancy division to optimize added value for the company recipient.
@@ -170,7 +172,7 @@
     </section>
 
     <section class="content-inner-2 service-wrapper-2 overlay-black-dark"
-        style="background-image:url('https://placeimg.com/1000/500/tech');background-size: cover;">
+        style="background-image:url(assets_user/images/about/ourService.png);background-size: cover;">
         <div class="container">
             <div class="section-head style-1 text-center aos-item" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">

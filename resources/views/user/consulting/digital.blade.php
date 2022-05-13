@@ -1,9 +1,10 @@
 @extends('layouts_user.master')
 @section('content')
 <div class="page-content bg-white">
-		
+
     <!-- Banner  -->
-    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(/assets_user/images/bnr/bnr1.jpg);">
+    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
+        style="background-image: url(/assets_user/images/bnr/bnr1.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>Digital Transformation Program </h1>
@@ -20,15 +21,15 @@
         </div>
     </div>
     <!-- Banner End -->
-    
+
     <!-- About -->
     <section class="content-inner">
         <div class="container">
             <div class="row about-style13">
                 <div class="col-lg-6 m-b30">
-                    <div class="dz-media">	
-                        <img  class="main-img" src="{{asset('assets_user/images/about/about20.jpg')}}" alt="">
-                        <div class="bg-img overlay-black-middle" >
+                    <div class="dz-media">
+                        <img class="main-img" src="{{asset('assets_user/images/about/about20.jpg')}}" alt="">
+                        <div class="bg-img overlay-black-middle">
                             <img src="{{asset('assets_user/images/about/about21.jpg')}}" alt="">
                         </div>
                     </div>
@@ -40,20 +41,20 @@
                             <h3 class="title m-b20">We Are Here to Increase Your Knowledge With Experience</h3>
                             <p align="justify">
                                 Organizational Enhancement Program with digital tools facilitation, such as:
-                                
-                                <div class="col-sm-6">
-                                    <ul class="list-circle gray">
-                                        <li>Artificial Intelligence / Robotics</li>
-                                        <li>Big Data and Analytics</li>
-                                        <li>Cyber Security</li>
-                                        <li>Cloud Technology</li>
-                                        <li>Internet of Things (IOT)</li>
-                                        <li>Blockchain</li>
-                                        <li>Edge Computing</li>
-                                    </ul>
-                                </div>
+
+                            <div class="col-sm-6">
+                                <ul class="list-circle gray">
+                                    <li>Artificial Intelligence / Robotics</li>
+                                    <li>Big Data and Analytics</li>
+                                    <li>Cyber Security</li>
+                                    <li>Cloud Technology</li>
+                                    <li>Internet of Things (IOT)</li>
+                                    <li>Blockchain</li>
+                                    <li>Edge Computing</li>
+                                </ul>
+                            </div>
                             </p>
-                            
+
                         </div>
                         <div class="row m-b30">
                             <h5 class="sub-title text-primary">Benefit : </h5>
@@ -62,7 +63,7 @@
                                     <li>Enhanced your management</li>
                                     <li>Return of investment (ROI) between 100% - 250% annually</li>
                                     <li>Guarantee and expected improvement to the project</li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="col-sm-6">
@@ -71,18 +72,20 @@
                                     <li>Long term relationship</li>
                                 </ul>
                             </div>
-                            
+
                         </div>
-                        <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact Us</a>
+                        <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact
+                            Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
     <!-- Counter -->
-    <section class="content-inner bg-img-fix overlay-primary-dark" style="background-image: url(/assets_user/images/background/bg1.jpg);">
+    <section class="content-inner bg-img-fix overlay-primary-dark"
+        style="background-image: url(/assets_user/images/background/bg1.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
@@ -141,15 +144,17 @@
         </div>
     </section>
 
-    <section class="content-inner-4 overlay-black-middle" style="background-image:url('/assets_user/images/background/bg8.jpg');background-size: cover;background-position: center;">
+    {{-- <section class="content-inner-4 overlay-black-middle"
+        style="background-image:url('/assets_user/images/background/bg8.jpg');background-size: cover;background-position: center;">
         <div class="container">
             <div class="section-head text-center">
                 <h6 class="sub-title text-white">Explore Recent Work</h6>
                 <h2 class="title m-b20 m-t15 text-white">We've Done Lot's Projects Let's Check Some Here</h2>
             </div>
-            <a href="https://www.youtube.com/watch?v=_FRZVScwggM" class="popup-youtube play-btn6 m-auto"><i class="fa fa-play"></i></a>
+            <a href="https://www.youtube.com/watch?v=_FRZVScwggM" class="popup-youtube play-btn6 m-auto"><i
+                    class="fa fa-play"></i></a>
         </div>
-    </section>
+    </section> --}}
 
 </div>
 @endsection

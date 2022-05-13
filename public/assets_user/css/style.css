@@ -39,7 +39,7 @@
   --font-family-base: Roboto, sans-serif;
   --border-radius-base: 0;
   --font-family-title: Oswald, sans-serif;
-  --title: #212529;
+  --title: #000;
   --quote: url(../images/quote-1.png);
   --quote-2: url(../images/quote-1.png); }
 
@@ -14363,25 +14363,25 @@ ul a.rsswidget {
       z-index: 1;
       position: relative; }
       .main-slider2 .banner-inner .banner-content .title {
-        font-size: 100px;
+        font-size: 50px;
         line-height: 100px;
         color: #fff;
         margin-bottom: 25px; }
         @media only screen and (max-width: 1400px) {
           .main-slider2 .banner-inner .banner-content .title {
-            font-size: 65px;
+            font-size: 64px;
             line-height: 70px; } }
         @media only screen and (max-width: 767px) {
           .main-slider2 .banner-inner .banner-content .title {
-            font-size: 50px;
+            font-size: 64px;
             line-height: 50px; } }
         @media only screen and (max-width: 575px) {
           .main-slider2 .banner-inner .banner-content .title {
-            font-size: 38px;
+            font-size: 64px;
             line-height: 38px; } }
       .main-slider2 .banner-inner .banner-content p {
         color: #fff;
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 50px;
         font-weight: 500; }
         @media only screen and (max-width: 767px) {
