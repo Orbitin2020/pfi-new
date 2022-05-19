@@ -11,14 +11,18 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
+| Digital Marketing
 */
 
 
-Route::get('/','User\HomeController@index')->name('user.home');
+
+Route::get('/', 'User\HomeController@index')->name('user.home');
 Route::get('/home','User\HomeController@index')->name('user.home');
 Route::get('/about','User\AboutController@index')->name('user.about');
 Route::get('/gallery','User\GalleryController@index')->name('user.gallery');
 Route::get('/contact','User\ContactController@index')->name('user.contact');
+
+Route::post('/contactUs', 'User\ContactController@store')->name('user.sendContact');
 
 // Consulting
 Route::group(['prefix' => 'consulting'],function(){
@@ -51,7 +55,6 @@ Route::group(['prefix' => 'energy'],function(){
     Route::get('/', 'User\EnergyController@index')->name('user.energy');
     // Route::get('/ousourcing', 'User\TrainingController@outsourcing')->name('user.manpower.outsourcing');
 });
-
 
 // News
 Route::get('/news','User\NewsController@index')->name('user.news');

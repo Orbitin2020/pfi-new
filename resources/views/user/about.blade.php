@@ -29,35 +29,46 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-head style-1">
-                        <h3 class="title m-b30">We Have a Wonderful Team We'll Walk You Through</h3>
-                        <div class="exp-row">
+                        <h3 class="title">Proven Force Indonesia</h3>
+
+                        <p class="m-b30" align="justify">Since its establishment in 2003 PT Proven Force Indonesia
+                            converted
+                            opportunities into success story. Our clients praised PT Proven Force Indonesia Team for
+                            being
+                            able to work well with their organizations and deliver the result. Testimonies from Hitachi,
+                            Medco Group, Nippon Indosari Corporindo, Frisian Flag, Bentoel Prima,Yupi Indo jelly gum,
+                            among
+                            other, proved that the result show in their performance. After few years of serving
+                            industries,
+                            PT Proven Force Indonesia has proven itself a worthy partner for companies who are looking
+                            toward continuous improvement. </p>
+                        <div class="exp-row m-b30">
                             <h2 class="year">19</h2>
-                            <p>YEARS OF <span>EXPRIENCE</span></p>
+                            <p>YEARS OF <span>EXPERIENCE</span></p>
                         </div>
+                        <a href="{{route('user.contact')}}"
+                            class="btn btn-primary btn-border btn-border m-r10 m-b10">Contact Us</a>
                     </div>
                 </div>
-                <div class="col-lg-6 m-b30">
-                    <p class="m-b30" align="justify">Since its establishment in 2003 PT Proven Force Indonesia converted
-                        opportunities into success story. Our clients praised PT Proven Force Indonesia Team for being
-                        able to work well with their organizations and deliver the result. Testimonies from Hitachi,
-                        Medco Group, Nippon Indosari Corporindo, Frisian Flag, Bentoel Prima,Yupi Indo jelly gum, among
-                        other, proved that the result show in their performance. After few years of serving industries,
-                        PT Proven Force Indonesia has proven itself a worthy partner for companies who are looking
-                        toward continuous improvement. </p>
-                    <div class="row">
+                <div class="col-lg-6 m-b30 mt-2">
+                    <h3 class="title">VISION</h3>
+                    <p class="text-dark"><strong>Become the leader in the facilitation of profitability
+                            improvement and performance enhancement for all types of organizations.</strong></p>
+                    <h3 class="title">MISSION</h3>
+                    <p class="text-dark"><strong>Facilitating organizations to run their operations more
+                            efficiently and effectively through improved management capability.</strong></p>
+                    {{-- <div class="row">
                         <div class="col-md-6">
                             <h3 class="title">VISION</h3>
                             <p class="text-dark"><strong>Become the leader in the facilitation of profitability
                                     improvement and performance enhancement for all types of organizations.</strong></p>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="title">MISSION</h3>
-                            <p class="text-dark"><strong>Facilitating organizations to run their operations more
-                                    efficiently and effectively through improved management capability.</strong></p>
+                            <h3 class="title">VISION</h3>
+                            <p class="text-dark"><strong>Become the leader in the facilitation of profitability
+                                    improvement and performance enhancement for all types of organizations.</strong></p>
                         </div>
-                    </div>
-                    <a href="{{route('user.contact')}}"
-                        class="btn btn-primary btn-border btn-border m-r10 m-b10">Contact Us</a>
+                    </div> --}}
                 </div>
             </div>
             {{-- <div class="row">
@@ -81,56 +92,7 @@
                 </div>
             </div> --}}
 
-            <div class="swiper-container content-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="content-box2">
-                            <div class="dz-info">
-                                <h3 class="title">Industrial Construction</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna </p>
-                            </div>
-                            <div class="dz-media m-b30">
-                                <img src="{{asset('assets_user/images/services/pic1.jpg')}}" alt="">
-                            </div>
-                            <div class="dz-bottom">
-                                <a href="services.html" class="btn-link">READ MORE<i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="content-box2">
-                            <div class="dz-info">
-                                <h3 class="title">Industrial Engineering</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna </p>
-                            </div>
-                            <div class="dz-media m-b30">
-                                <img src="{{asset('assets_user/images/services/pic2.jpg')}}" alt="">
-                            </div>
-                            <div class="dz-bottom">
-                                <a href="services.html" class="btn-link">READ MORE<i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="content-box2">
-                            <div class="dz-info">
-                                <h3 class="title">Industrial Automation</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna </p>
-                            </div>
-                            <div class="dz-media m-b30">
-                                <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt="">
-                            </div>
-                            <div class="dz-bottom">
-                                <a href="services.html" class="btn-link">READ MORE<i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination-content m-t30 swiper-pagination text-center"></div>
-            </div>
+
         </div>
     </section>
 
@@ -205,7 +167,7 @@
                 <h6 class="sub-title text-primary">Our Experts</h6>
                 <h2 class="title m-b20 text-white">Everyone Loves Got An Incredible Project Right Now.</h2>
             </div>
-            <a href="https://www.youtube.com/watch?v=_FRZVScwggM" class="popup-youtube play-btn2 m-auto"><i
+            <a href="https://www.youtube.com/watch?v=Dr4HGz1yjYw" class="popup-youtube play-btn2 m-auto"><i
                     class="fa fa-play"></i></a>
         </div>
     </section>
@@ -283,7 +245,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="400">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic1.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/images/team/pic2.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -323,14 +285,23 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/baihaki.jpg')}}" alt="">
                                     <ul class="team-social">
-                                        <li><a href="https://twitter.com/" class="twitter"><i
-                                                    class="fab fa-twitter"></i></a></li>
-                                        <li><a href="https://www.facebook.com/" class="facebook"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i
-                                                    class="fab fa-pinterest-p"></i></a></li>
+                                        <li>
+                                            <a href="https://twitter.com/" class="twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/" class="facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://in.pinterest.com/" class="pinterest">
+                                                <i class="fab fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="dz-content">
@@ -343,7 +314,36 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/ervin.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li>
+                                            <a href="https://twitter.com/" class="twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/" class="facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://in.pinterest.com/" class="pinterest">
+                                                <i class="fab fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">Ervin Priambodo</h3>
+                                    <h6 class="dz-position text-primary">Associate Director of Consulting</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
+                                data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/directImage/setiyo.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -363,7 +363,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/hendradi.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>

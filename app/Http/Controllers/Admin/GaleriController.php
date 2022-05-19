@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Galery;
 use App\Models\Galery_categories;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 use Auth;
 use File;
 use DataTables;
@@ -22,7 +23,7 @@ class GaleriController extends Controller
     {
         // dd(Artikel::select('*')->orderBy('created_at')->get());
         if ($request->ajax()) {
-            $galeri = Galery::select('*')->orderBy('created_at');
+            $galeri = Galery::select('*')->orderBy('created_at', 'DESC');
             return Datatables::of($galeri)
                 ->addIndexColumn()
                 ->addColumn('created_at', function ($galeri) {
@@ -65,11 +66,15 @@ class GaleriController extends Controller
 
     public function store(Request $request)
     {
+        $random = Str::random(10);
         $gambar = $request->file('gambar');
         $extension = $gambar->getClientOriginalExtension();
-        $name = $request->input('nama').'.'.$extension;
+        // $name = $request->input('nama').'.'.$extension;
+        $name = $random.'.'.$extension;
         $path = public_path().'/image/galeri';
         $upload = $gambar->move($path,$name);
+
+        // debugbar()->info($name);
 
         $galeri = Galery::create([
             'nama'      => $request->input('nama'),
@@ -89,8 +94,7 @@ class GaleriController extends Controller
                 'success'   => false,
                 'message'   => 'Gambar Gagal Di Simpan'
             ],400);
-        }
-        
+        } 
     }
 
     public function edit($id)

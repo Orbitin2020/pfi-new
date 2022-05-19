@@ -68,12 +68,13 @@
                                     <li>
                                         <i class="la la-clock-o"></i>
                                         <span>Email Address</span>
-                                        <h4 class="title">Website@info.com</h4>
+                                        <h4 class="title">provenforcegroup.id@gmail.com<br>services@gmail.com</h4>
                                     </li>
                                     <li>
                                         <i class="la la-map"></i>
                                         <span>Location</span>
-                                        <h4 class="title">Envato Pty Ltd 13/2 Permanent <br> St Melbourne </h4>
+                                        <h4 class="title">Soho Pancoran, Tebet Bar., Kec. Tebet, Kota Jakarta
+                                            Selatan, Daerah Khusus Ibukota Jakarta </h4>
                                     </li>
                                 </ul>
                             </div>
@@ -88,10 +89,18 @@
                         </div>
                         <div class="col-lg-6">
                             <h4>About Us</h4>
-                            <p>Aliquam erat volutpat. Nunc erat massa, porttitor vel egestas sit amet, tristique at
-                                massa. Donec posuere odio neque, in ultricies lorem aliquet eu. Donec venenatis libero a
-                                nulla placerat egestas.</p>
-                            <a href="" class="btn btn-primary">READ MORE</a>
+                            <p align="justify">Since its establishment in 2003 PT Proven Force Indonesia converted
+                                opportunities into
+                                success story. Our clients
+                                praised PT Proven Force Indonesia Team for being able to work well with their
+                                organizations and deliver the result.
+                                Testimonies from Hitachi, Medco Group, Nippon Indosari Corporindo, Frisian Flag, Bentoel
+                                Prima,Yupi Indo jelly gum,
+                                among other, proved that the result show in their performance. After few years of
+                                serving industries, PT Proven Force
+                                Indonesia has proven itself a worthy partner for companies who are looking toward
+                                continuous improvement.</p>
+                            <a href="{{ route('user.about') }}" class="btn btn-primary">READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -151,13 +160,16 @@
                     </li>
                     <li class="sub-menu-down"><a href="javascript:void(0);"><span>Articles</span></a>
                         <ul class="sub-menu">
-                            {{-- <li><a href="{{route(" user.news")}}">News</a></li> --}}
-                            {{-- <li><a href="{{route(" user.blog")}}">Blog</a></li> --}}
+                            {{-- <li><a href="{{ route('user.news')}}">News</a></li>
+                            <li><a href="#">Blog</a></li> --}}
+                            <li><a href="{{route('user.news')}}">News</a></li>
+                            <li><a href="{{route('user.blog')}}">Blog</a></li>
                         </ul>
                     </li>
-                    {{-- <li class=""><a href="{{route(" user.gallery")}}"><span>Gallery</span></a></li>
-                    <li class=""><a href="{{route(" user.contact")}}"><span>Contact</span></a></li> --}}
-
+                    {{-- <li class=""><a href="#"><span>Gallery</span></a></li>
+                    <li class=""><a href="#"><span>Contact</span></a></li> --}}
+                    <li class=""><a href="{{route('user.gallery')}}"><span>Gallery</span></a></li>
+                    <li class=""><a href="{{route('user.contact')}}"><span>Contact</span></a></li>
                 </ul>
                 <div class="dz-social-icon">
                     <ul>

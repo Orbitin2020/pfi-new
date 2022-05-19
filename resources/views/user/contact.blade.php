@@ -1,9 +1,11 @@
 @extends('layouts_user.master')
 @section('content')
 <div class="page-content bg-white">
-		
+
     <!-- Banner  -->
-    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center" style="background-image: url(assets_user/images/bnr/bnr1.jpg);">
+    {{-- assets_user/images/bnr/bnr1.jpg --}}
+    <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
+        style="background-image: url(assets_user/images/background/bgAbout.png);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>Contact Us</h1>
@@ -20,14 +22,17 @@
         </div>
     </div>
     <!-- Banner End -->
-    
+
     <section class="content-inner-2 pt-0">
         <div class="map-iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.159315046212!2d106.84278481540119!3d-6.2427242628683555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3b9259615c5%3A0x1fa5a36bd5f609ec!2sSOHO%20Pancoran!5e0!3m2!1sid!2sid!4v1650854604758!5m2!1sid!2sid" style="border:0; width:100%; min-height:100%; margin-bottom: -8px;" allowfullscreen></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.159315046212!2d106.84278481540119!3d-6.2427242628683555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3b9259615c5%3A0x1fa5a36bd5f609ec!2sSOHO%20Pancoran!5e0!3m2!1sid!2sid!4v1650854604758!5m2!1sid!2sid"
+                style="border:0; width:100%; min-height:100%; margin-bottom: -8px;" allowfullscreen></iframe>
         </div>
     </section>
-    
-    <section class="contact-wraper1" style="background-image: url(assets_user/images/background/bg18.jpg);">	
+
+    {{-- style="background-image: url(assets_user/images/background/bg18.jpg);" --}}
+    <section class="contact-wraper1" style="background-image: url(assets_user/images/background/bgAbout.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -45,7 +50,11 @@
                                 </div>
                                 <div class="icon-content">
                                     <h4 class=" dz-tilte text-white">Our Address</h4>
-                                    <p class="font-18">1247/Plot No. 39, 15th Phase, Huab Colony, Kukatpally, Hyderabad</p>
+                                    <p class="font-18">Soho Pancoran, Tebet Bar., Kec. Tebet, Kota Jakarta Selatan,
+                                        Daerah
+                                        Khusus
+                                        Ibukota Jakarta
+                                    </p>
                                 </div>
                             </li>
                             <li class="icon-bx-wraper text-white left m-b30">
@@ -56,7 +65,7 @@
                                 </div>
                                 <div class="icon-content">
                                     <h4 class="dz-tilte text-white">Our Email</h4>
-                                    <p class="font-18">info@gmail<br>services@gmail.com</p>
+                                    <p class="font-18">provenforcegroup.id@gmail.com<br>services@gmail.com</p>
                                 </div>
                             </li>
                         </ul>
@@ -73,22 +82,25 @@
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="box">
                             {{-- <input type="hidden" name="_next" value="http://localhost:8000/contact"> --}}
-                            
-                            <div class="dzFormMsg"></div>		
+
+                            <div class="dzFormMsg"></div>
                             <div class="input-group">
                                 <input type="text" class="form-control" name="nama" placeholder="Full Name">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="email" placeholder="Email Adress">
+                                <input type="email" class="form-control" name="email" placeholder="Email Adress">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="no_hp" placeholder="Phone No.">
+                                <input type="number" class="form-control" name="telepon" placeholder="Phone No.">
                             </div>
                             <div class="input-group">
-                                <textarea name="message" rows="5" class="form-control">Message</textarea>
+                                <input type="text" class="form-control" name="subjek" placeholder="Subjek">
+                            </div>
+                            <div class="input-group">
+                                <textarea name="pesan" rows="5" class="form-control" placeholder="Message"></textarea>
                             </div>
                             <div>
-                                <button onclick="contact()" name="submit" type="submit" value="submit" class="btn w-100 btn-primary btn-border">CONTACT US</button>
+                                <button id="btnSubmit" class="btn w-100 btn-primary btn-border">CONTACT US</button>
                             </div>
                         </form>
                     </div>
@@ -96,27 +108,82 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Clients Swiper -->
-    <section class="section-full content-inner-5">
+    {{-- <section class="section-full content-inner-5">
         <div class="container">
             <div class="swiper-container clients-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="{{asset('assets_user/images/logo/logo1.jpg')}}" alt="">
+                        <img src="{{ asset('assets_user/images/logo/logo1.jpg') }}" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="{{asset('assets_user/images/logo/logo2.jpg')}}" alt="">
+                        <img src="{{ asset('assets_user/images/logo/logo2.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> --}}
+
 </div>
 @endsection
 @push('scripts')
 <script>
+    $('#btnSubmit').on('click', function(e) {
+        e.preventDefault();
+        let token = $('input[name="_token"]').val();
+
+        $.ajax({
+            url: "{{ route('user.sendContact') }}",
+            type: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': token
+            },
+            method: 'POST',
+            data: $('#frm_contact').serialize(),
+            beforeSend: function() {
+                Swal.fire({
+                    title: 'Please Wait...',
+                    text: 'Your data is being processed!',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                    },
+                })
+            },
+            success: function(data) {
+                if(data.status == 200) {
+                    Swal.fire(
+                        'Successfully!',
+                        data.message,
+                        'success'
+                    );
+                    $('#frm_contact').trigger("reset");
+                } else {
+                    var values = '';
+                    jQuery.each(data.message, function(key, value) {
+                        values += value
+                    });
+                    Swal.fire(
+                        'Failed!',
+                        values,
+                        'error'
+                    );
+                    $('#frm_contact').trigger("reset");
+                }
+            },
+            error: function(err) {
+                Swal.fire(
+                    'Gagal!',
+                    err.message,
+                    'error'
+                );
+            }
+        })
+    });
+
+
     function contact() {
         $.ajax({
             // headers : {

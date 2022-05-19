@@ -12171,7 +12171,9 @@ ul.list-circle li {
   ul.list-circle li:before {
     content: "\f111";
     font-size: 6px;
-    top: 15px; }
+    top: 15px;
+    line-height: 70%;
+   }
 
 ul.list-angle-double li:before {
   content: "\f101";
@@ -14374,11 +14376,12 @@ ul a.rsswidget {
         @media only screen and (max-width: 767px) {
           .main-slider2 .banner-inner .banner-content .title {
             font-size: 64px;
-            line-height: 50px; } }
+            line-height: 60px; } }
         @media only screen and (max-width: 575px) {
           .main-slider2 .banner-inner .banner-content .title {
             font-size: 64px;
-            line-height: 38px; } }
+            line-height: 60px;
+           } }
       .main-slider2 .banner-inner .banner-content p {
         color: #fff;
         font-size: 15px;

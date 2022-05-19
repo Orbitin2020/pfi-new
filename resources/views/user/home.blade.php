@@ -24,7 +24,8 @@
                                     industries, PT Proven Force Indonesia has proven itself a worthy partner for
                                     companies who are looking toward continuous improvement.
                                 </p>
-                                <a data-swiper-parallax=" -1500" href="" class="btn btn-primary">READ MORE <i
+                                <a data-swiper-parallax=" -1500" href="{{route('user.about')}}"
+                                    class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
                         </div>
@@ -44,7 +45,7 @@
                                     supervisors control at the point of execution
 
                                 </p>
-                                <a data-swiper-parallax="-1500" href="{{route('user.about')}}"
+                                <a data-swiper-parallax="-1500" href="{{route('user.consulting')}}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
@@ -57,8 +58,19 @@
                         <div class="row">
                             <div class="col-lg-9">
                                 <h1 class="title text-dark" data-swiper-parallax="-500">Manpower Outsourcing</h1>
-                                <p class="text-dark" data-swiper-parallax="-1000">MPO Description</p>
-                                <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
+                                <p class="text-dark" data-swiper-parallax="-1000">Proven Force Indonesia always strives
+                                    hard to maintain the balance between company recruitment and the needs of its
+                                    employees. Taking into account the PFI way of thinking and its intention to assist
+                                    companies and employees to maintain
+                                    their business activities and reposition the function of out sourcing to its
+                                    original purpose to improve company
+                                    productivity. PFI, as an independent intermediary, fully understands the importance
+                                    of professional mediation. The
+                                    experienced skill sets of PR team has attracted a growing number of companies to
+                                    entrust their outsourcing requirements
+                                    to Proven Force Indonesia</p>
+                                <a data-swiper-parallax="-1500" href="{{ route('user.manpower') }}"
+                                    class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
                         </div>
@@ -78,7 +90,8 @@
                                     be the driving force for a company
                                     by optimizing all existing resources, including human resources related to
                                     technology.</p>
-                                <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
+                                <a data-swiper-parallax="-1500" href="{{ route('user.training') }}"
+                                    class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
                         </div>
@@ -90,8 +103,15 @@
                         <div class="row">
                             <div class="col-lg-9">
                                 <h1 class="title text-dark" data-swiper-parallax="-500">Energy Efficiency</h1>
-                                <p class="text-dark" data-swiper-parallax="-1000">Energy Efficiency Description</p>
-                                <a data-swiper-parallax="-1500" href="" class="btn btn-primary">READ MORE <i
+                                <p class="text-dark" data-swiper-parallax="-1000">With the recent focus on Energy
+                                    Efficiency (EE) as a means to minimize the consumption of the power and reduce both
+                                    operational costs and environmental damage, such as pollution and climate change, PH
+                                    is committed to expanding it's
+                                    proven methodology to deliver productivity and savings improvements through projects
+                                    designed to impact the use and
+                                    consumption of energy, water and carbon.</p>
+                                <a data-swiper-parallax="-1500" href="{{ route('user.energy') }}"
+                                    class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
                             </div>
                         </div>
@@ -115,7 +135,7 @@
 
                             <h3 class="title m-b20">WHY CHOOSE US?</h3>
                             <p class="text-dark">
-                                Extensive experienced in the training industry for 17 years, A variety of methods not
+                                Extensive experienced in the training industry for 19 years, A variety of methods not
                                 offered by other providers, Customized training materials to suit the client needs,
                                 Equipped with a consultancy division to optimize added value for the company recipient.
                             </p>
@@ -131,11 +151,11 @@
                             <div class="about-thumb">
                                 <div class="split-box">
                                     <div>
-                                        <img class="w-100" src="{{asset('assets_user/images/about/about1.jpg')}}"
+                                        <img class="w-100" src="{{asset('assets_user/images/about/thumbnail.jpg')}}"
                                             alt="">
                                     </div>
                                 </div>
-                                <a href="https://www.youtube.com/watch?v=_FRZVScwggM"
+                                <a href="https://www.youtube.com/watch?v=Dr4HGz1yjYw"
                                     class="popup-youtube play-btn3">Play Video</a>
                             </div>
                         </div>
@@ -193,7 +213,8 @@
                                     <div class="icon-lg m-b20 text-primary">
                                         <i class="flaticon-cogwheel"></i>
                                     </div>
-                                    <h4 class="dz-title"><a href="{{route('user.consulting')}}">Consulting</a></h4>
+                                    <h4 class="dz-title"><a href="{{route('user.consulting')}}">Consulting Services</a>
+                                    </h4>
                                     <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich
                                         that capitalizes</p>
                                 </div>
@@ -285,11 +306,10 @@
                         <div class="testimonial-2 aos-item" data-aos="fade-up" data-aos-duration="800"
                             data-aos-delay="200">
                             <div class="testimonial-pic">
-                                <img src="{{asset('assets_user/images/testimonials/large/pic1.jpg')}}" alt="">
+                                <img src="{{asset('assets_user/images/testimonials/large/testimonial.png')}}" alt="">
                             </div>
                             <div class="testimonial-info">
                                 <div class="info">
-
                                     <h5 class="testimonial-name">Kusuma Widjaja</h5>
                                     <span class="testimonial-position">Director, Bentoel Prima</span>
                                 </div>
@@ -310,7 +330,7 @@
                         <div class="testimonial-2 aos-item" data-aos="fade-up" data-aos-duration="800"
                             data-aos-delay="400">
                             <div class="testimonial-pic">
-                                <img src="{{asset('assets_user/images/testimonials/large/pic2.jpg')}}" alt="">
+                                <img src="{{asset('assets_user/images/testimonials/large/testimonial.png')}}" alt="">
                             </div>
                             <div class="testimonial-info">
                                 <div class="info">
@@ -332,7 +352,8 @@
                         <div class="testimonial-2 aos-item" data-aos="fade-up" data-aos-duration="800"
                             data-aos-delay="600">
                             <div class="testimonial-pic">
-                                <img src="{{asset('assets_user/images/testimonials/large/pic3.jpg')}}" alt="">
+                                {{-- pic3.jpg --}}
+                                <img src="{{asset('assets_user/images/testimonials/large/testimonial.png')}}" alt="">
                             </div>
                             <div class="testimonial-info">
                                 <div class="info">
@@ -366,47 +387,48 @@
                 <h2 class="title m-b20">We've Done Lot's Projects Let's Check Some Here</h2>
             </div>
             <div class="row sp15 aos-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
-                <div class="col-xl-3 col-md-6 m-b15">
+                <div class="col-xl-6 col-md-6 m-b15">
                     <div class="image-tooltip-effect dz-box style-2">
+                        {{-- {{asset('assets_user/directImage/1.jpg')}} assets_user/images/work/work-2/pic1.jpg --}}
                         <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic1.jpg');"></a>
+                            style="background-image:url('assets_user/portfolio/port2.jpg');"></a>
                         <div class="dz-info">
                             <h4 class="title m-b10">Flexible Manufacturing</h4>
-                            <h6 class="sub-title text-primary m-b0">150 projects</h6>
+                            {{-- <h6 class="sub-title text-primary m-b0">150 projects</h6> --}}
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 m-b15">
+                <div class="col-xl-6 col-md-6 m-b15">
                     <div class="image-tooltip-effect dz-box style-2">
                         <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic2.jpg');"></a>
+                            style="background-image:url('assets_user/portfolio/port1.jpg');"></a>
                         <div class="dz-info">
                             <h4 class="title m-b10">Power & Energy</h4>
-                            <h6 class="sub-title text-primary m-b0">100 projects</h6>
+                            {{-- <h6 class="sub-title text-primary m-b0">100 projects</h6> --}}
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 m-b15">
                     <div class="image-tooltip-effect dz-box style-2">
                         <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic3.jpg');"></a>
+                            style="background-image:url('assets_user/portfolio/port3.jpg');"></a>
                         <div class="dz-info">
-                            <h4 class="title m-b10">All Maintenace</h4>
-                            <h6 class="sub-title text-primary m-b0">120 projects</h6>
+                            <h4 class="title m-b10">Gathering Balai Kartini</h4>
+                            {{-- <h6 class="sub-title text-primary m-b0">120 projects</h6> --}}
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 m-b15">
                     <div class="image-tooltip-effect dz-box style-2">
                         <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic4.jpg');"></a>
+                            style="background-image:url('assets_user/portfolio/port1.jpg');"></a>
                         <div class="dz-info">
-                            <h4 class="title m-b10">Construction Machines</h4>
-                            <h6 class="sub-title text-primary m-b0">50 projects</h6>
+                            <h4 class="title m-b10">Gathering Balai Kartini</h4>
+                            {{-- <h6 class="sub-title text-primary m-b0">50 projects</h6> --}}
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 m-b15">
+                {{-- <div class="col-xl-3 col-md-6 m-b15">
                     <div class="image-tooltip-effect dz-box style-2">
                         <a href="portfolio-details.html" class="dz-media height-md"
                             style="background-image:url('assets_user/images/work/work-2/pic5.jpg');"></a>
@@ -449,25 +471,23 @@
                 <div class="col-xl-6 col-md-6 m-b10">
                     <div class="image-tooltip-effect dz-box style-2">
                         <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic9.jpg');"></a>
+                            style="background-image:url('assets_user/portfolio/port2.jpg');"></a>
                         <div class="dz-info">
                             <h4 class="title m-b10">Best Engineering</h4>
                             <h6 class="sub-title text-primary m-b0">350 projects</h6>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
-
-
 
     <section class="content-inner-1">
         <div class="container">
             <div class="section-head style-1 text-center aos-item" data-aos="fade-up" data-aos-duration="800"
                 data-aos-delay="200">
                 <h6 class="sub-title text-primary">Our Experts</h6>
-                <h2 class="title m-b20">Team & Advisory board</h2>
+                <h2 class="title m-b20">Team & Advisory Board</h2>
             </div>
             <div class="team-swiper-1 btn-center-lr">
                 <div class="swiper-container team-slider">
@@ -476,7 +496,8 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="400">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic1.jpg')}}" alt="">
+                                    {{-- assets_user/images/team/pic1.jpg --}}
+                                    <img src="{{asset('assets_user/directImage/pakjimmy.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -496,7 +517,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="600">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic2.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/1.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -516,7 +537,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/baihaki.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -536,7 +557,27 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/ervin.jpg')}}" alt="">
+                                    <ul class="team-social">
+                                        <li><a href="https://twitter.com/" class="twitter"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="facebook"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://in.pinterest.com/" class="pinterest"><i
+                                                    class="fab fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="dz-content">
+                                    <h3 class="dz-name">Ervin Priambodo</h3>
+                                    <h6 class="dz-position text-primary">Associate Director of Consulting</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
+                                data-aos-duration="800" data-aos-delay="800">
+                                <div class="dz-media">
+                                    <img src="{{asset('assets_user/directImage/setiyo.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -556,7 +597,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/hendradi.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -576,7 +617,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/1.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -614,6 +655,7 @@
                         </div>
                         <form class="dz-form dzForm" id="frm_contact">
                             {{ csrf_field() }}
+
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_template" value="box">
                             <div class="dzFormMsg"></div>
@@ -621,13 +663,16 @@
                                 <input type="text" class="form-control" name="nama" placeholder="Full Name">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="email" placeholder="Email Adress">
+                                <input type="email" class="form-control" name="email" placeholder="Email Adress">
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="no_hp" placeholder="Phone No.">
+                                <input type="number" class="form-control" name="telepon" placeholder="Phone No.">
                             </div>
                             <div class="input-group">
-                                <textarea name="message" rows="5" class="form-control">Message</textarea>
+                                <input type="text" class="form-control" name="subjek" placeholder="Subjek">
+                            </div>
+                            <div class="input-group">
+                                <textarea name="pesan" rows="5" class="form-control">Message</textarea>
                             </div>
                             {{-- <div class="input-group">
                                 <div class="g-recaptcha" data-sitekey="<!-- Put Your reCaptcha Secret Key -->"
@@ -637,8 +682,8 @@
                                     data-error="Please complete the Captcha">
                             </div> --}}
                             <div>
-                                <button onclick="contact()" name="submit" type="submit" value="submit"
-                                    class="btn btn-primary">SUBSCRIBE NOW</button>
+                                <button id="btnSubmit" class="btn btn-primary">SUBSCRIBE
+                                    NOW</button>
                             </div>
                         </form>
                     </div>
@@ -656,8 +701,9 @@
                         <li>We Are Laregest Independent</li>
                     </ul>
                     <div class="split-box">
-                        <img src="{{asset('assets_user/images/about/about28.jpg')}}" alt="" class="aos-item"
-                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                        {{-- assets_user/images/about/about28.jpg --}}
+                        <img src="{{asset('image/homeContact.png')}}" alt="" class="aos-item" data-aos="fade-up"
+                            data-aos-duration="800" data-aos-delay="800">
                     </div>
                 </div>
             </div>
@@ -698,6 +744,61 @@
 @endsection
 @push('scripts')
 <script>
+    $('#btnSubmit').on('click', function(e) {
+        e.preventDefault();
+        let token = $('input[name="_token"]').val();
+
+        $.ajax({
+            url: "{{ route('user.sendContact') }}",
+            type: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': token
+            },
+            method: 'POST',
+            data: $('#frm_contact').serialize(),
+            beforeSend: function() {
+                Swal.fire({
+                    title: 'Please Wait...',
+                    text: 'Your data is being processed!',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                    },
+                })
+            },
+            success: function(data) {
+
+                if(data.status == 200) {
+                    Swal.fire(
+                        'Successfully!',
+                        data.message,
+                        'success'
+                    );
+                    $('#frm_contact').trigger("reset");
+                } else {
+                    var values = '';
+                    jQuery.each(data.message, function(key, value) {
+                        values += value
+                    });
+                    Swal.fire(
+                        'Failed!',
+                        values,
+                        'error'
+                    );
+                    $('#frm_contact').trigger("reset");
+                }
+            },
+            error: function(err) {
+                Swal.fire(
+                    'Gagal!',
+                    err.message,
+                    'error'
+                );
+            }
+        })
+    })
+
     function contact() {
         $.ajax({
             // headers : {
@@ -741,6 +842,36 @@
                 })
             }
         });
+    }
+
+    function contactUs() {
+        let token = $('input[name="_token"]').val();
+        $.ajax({
+            url: "{{ route('user.sendContact') }}",
+            type: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': token
+            },
+            method: 'POST',
+            data: $('#frm_contact').serialize(),
+            beforeSend: function() {
+                Swal.fire({
+                    title: 'Please Wait...',
+                    text: 'Your data is being processed!',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                    },
+                })
+            },
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        })
     }
 </script>
 @endpush

@@ -4,7 +4,7 @@
 
     <!-- Banner  -->
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
-        style="background-image: url(/assets_user/images/bnr/bnr1.jpg);">
+        style="background-image: url(../assets_user/images/background/bgAbout.png);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>In House Training Program </h1>
@@ -25,14 +25,17 @@
     <!-- About -->
     <section class="content-inner">
         <div class="container">
-            <div class="row about-style13">
+            <div class="row about-style12">
                 <div class="col-lg-6 m-b30">
                     <div class="dz-media">
-                        <img class="main-img" src="{{asset('assets_user/images/about/about20.jpg')}}" alt="">
+                        <img src="{{asset('assets_user/service/pict1.png')}}" alt="">
+                    </div>
+                    {{-- <div class="dz-media">
+                        <img class="main-img" src="{{asset('assets_user/service/pict1.png')}}" alt="">
                         <div class="bg-img overlay-black-middle">
                             <img src="{{asset('assets_user/images/about/about21.jpg')}}" alt="">
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="col-lg-6 m-b30 align-self-center">
                     <div class="about-content">
@@ -46,17 +49,16 @@
                                 comprehensive.
                             </p>
                         </div>
-                        <div class="row m-b30">
+                        {{-- <div class="row m-b30">
                             <h5 class="sub-title text-primary">Benefit : </h5>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <ul class="list-circle gray">
-                                    {{-- <li>Enhanced your management</li>
+                                    <li>Enhanced your management</li>
                                     <li>Expected improvement to the project</li>
-                                    <li>Long term relationship</li> --}}
+                                    <li>Long term relationship</li>
                                 </ul>
                             </div>
-
-                        </div>
+                        </div> --}}
                         <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact
                             Us</a>
                     </div>

@@ -12,7 +12,7 @@ class GalleryController extends Controller
     public function index()
     {
         $kategori = Galery_categories::all();
-        $galery = Galery::all();
+        $galery = Galery::orderBy('id', 'DESC')->get();
         return view('user.gallery',compact('kategori','galery'));
     }
     
