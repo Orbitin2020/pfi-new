@@ -4,7 +4,7 @@
 
     <!-- Banner  -->
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
-        style="background-image: url(../assets_user/images/background/bgAbout.png);">
+        style="background-image: url(assets_user/images/bnr/training2.png);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>About Training & Development Service</h1>
@@ -54,7 +54,6 @@
                                 Training method begins with a deep excavation on the problems encountered by the client,
                                 with an emphasis on the effectiveness of the program and how the program will help
                                 participants acquire the competencies they need for their work.
-
                             </p>
                             <a href="{{route('user.contact')}}" class="btn btn-primary btn-border m-r10 m-b10">Contact
                                 Us</a>

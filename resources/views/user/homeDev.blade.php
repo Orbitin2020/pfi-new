@@ -19,11 +19,7 @@
                                 <p class="text-dark" data-swiper-parallax="-1000">
                                     Since its establishment in 2003 PT Proven Force Indonesia converted opportunities
                                     into success story. Our clients praised PT Proven Force Indonesia Team for being
-                                    able to work well with their organizations and deliver the result. Testimonies from
-                                    Hitachi, Medco Group, Nippon Indosari Corporindo, Frisian Flag, Bentoel Prima, among
-                                    other, proved that the result show in their performance. After few years of serving
-                                    industries, PT Proven Force Indonesia has proven itself a worthy partner for
-                                    companies who are looking toward continuous improvement.
+                                    able to work well with their organizations and deliver the result.
                                 </p>
                                 <a data-swiper-parallax=" -1500" href="{{route('user.about')}}"
                                     class="btn btn-primary">READ MORE <i
@@ -65,11 +61,7 @@
                                     companies and employees to maintain
                                     their business activities and reposition the function of out sourcing to its
                                     original purpose to improve company
-                                    productivity. PFI, as an independent intermediary, fully understands the importance
-                                    of professional mediation. The
-                                    experienced skill sets of PR team has attracted a growing number of companies to
-                                    entrust their outsourcing requirements
-                                    to Proven Force Indonesia </p>
+                                    productivity. </p>
                                 <a data-swiper-parallax="-1500" href="{{ route('user.manpower') }}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
@@ -430,56 +422,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="col-xl-3 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic5.jpg');"></a>
-                        <div class="dz-info">
-                            <h4 class="title m-b10">Best Engineering</h4>
-                            <h6 class="sub-title text-primary m-b0">160 projects</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic6.jpg');"></a>
-                        <div class="dz-info">
-                            <h4 class="title m-b10">Flexible Manufacturing</h4>
-                            <h6 class="sub-title text-primary m-b0">250 projects</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic7.jpg');"></a>
-                        <div class="dz-info">
-                            <h4 class="title m-b10">Best Engineering</h4>
-                            <h6 class="sub-title text-primary m-b0">90 projects</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/images/work/work-2/pic8.jpg');"></a>
-                        <div class="dz-info">
-                            <h4 class="title m-b10">Flexible Manufacturing</h4>
-                            <h6 class="sub-title text-primary m-b0">200 projects</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-6 m-b10">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
-                            style="background-image:url('assets_user/portfolio/port2.jpg');"></a>
-                        <div class="dz-info">
-                            <h4 class="title m-b10">Best Engineering</h4>
-                            <h6 class="sub-title text-primary m-b0">350 projects</h6>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
@@ -711,37 +653,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Subscribe -->
-    {{-- <section class="section-full dz-subscribe style-1">
-        <div class="container">
-            <div class="subscribe-inner row align-items-center aos-item" data-aos="flip-up" data-aos-duration="800"
-                data-aos-delay="200">
-                <div class="col-lg-6 mb-lg-0 mb-4">
-                    <div class="title-head">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <h3 class="title text-white">SIGN UP TO GET LATEST UPDATES</h3>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form class="dzSubscribe" action="script/mailchamp.php" method="post">
-                        <div class="dzSubscribeMsg"></div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input name="dzEmail" required="required" type="email" class="form-control"
-                                    placeholder="Email Address...">
-                                <div class="input-group-addon">
-                                    <button name="submit" value="Submit" type="submit" class="btn btn-primary"><i
-                                            class="fas fa-envelope"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
 </div>
 @endsection
 @push('scripts')

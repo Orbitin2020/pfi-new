@@ -4,7 +4,7 @@
 
     <!-- Banner  -->
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
-        style="background-image: url(../assets_user/images/background/bgAbout.png);">
+        style="background-image: url(assets_user/images/bnr/productivity2.png);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>About Energy Efficiency Service</h1>
