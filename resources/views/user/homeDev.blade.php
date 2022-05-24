@@ -8,19 +8,25 @@
             <div class="swiper-wrapper">
                 {{-- Ukuran Image 1920px - 1080 --}}
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/bannerss.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-8">
-                                <h4 class="title text-dark" data-swiper-parallax="-500">PFI
+                                <h4 class="title text-white" data-swiper-parallax="-500">PFI
                                     Delivers <br> Outstanding
                                     Results
                                 </h4>
-                                <p class="text-dark" data-swiper-parallax="-1000">
-                                    Since its establishment in 2003 PT Proven Force Indonesia converted opportunities
-                                    into success story. Our clients praised PT Proven Force Indonesia Team for being
-                                    able to work well with their organizations and deliver the result.
-                                </p>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <p class="text-white" data-swiper-parallax="-1000" align="justify">
+                                            Since its establishment in 2003 PT Proven Force Indonesia converted
+                                            opportunities
+                                            into success story. Our clients praised PT Proven Force Indonesia Team for
+                                            being
+                                            able to work well with their organizations and deliver the result.
+                                        </p>
+                                    </div>
+                                </div>
                                 <a data-swiper-parallax=" -1500" href="{{route('user.about')}}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
@@ -29,19 +35,26 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/bannerConsulting.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title text-dark" data-swiper-parallax="-500">Consulting Services</h1>
-                                <p class="text-dark" data-swiper-parallax="-1000">
-                                    Transformation of total management culture and operation system, which will produce
-                                    measurable result in productivity improvement by enchancing the managerial ability
-                                    of corporations, management, replace entrenched and counterproductive methods with
-                                    productive and profitable techniques and install a system that gives front line
-                                    supervisors control at the point of execution
-
-                                </p>
+                                <h1 class="title text-white" data-swiper-parallax="-500">Consulting <br> Services</h1>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <p class="text-white" data-swiper-parallax="-1000" align="justify">
+                                            Transformation of total management culture and operation system, which will
+                                            produce
+                                            measurable result in productivity improvement by enchancing the managerial
+                                            ability
+                                            of corporations, management, replace entrenched and counterproductive
+                                            methods with
+                                            productive and profitable techniques and install a system that gives front
+                                            line
+                                            supervisors control at the point of execution.
+                                        </p>
+                                    </div>
+                                </div>
                                 <a data-swiper-parallax="-1500" href="{{route('user.consulting')}}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
@@ -50,18 +63,26 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/bannerss.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title text-dark" data-swiper-parallax="-500">Manpower Outsourcing</h1>
-                                <p class="text-dark" data-swiper-parallax="-1000">Proven Force Indonesia always strives
-                                    hard to maintain the balance between company recruitment and the needs of its
-                                    employees. Taking into account the PFI way of thinking and its intention to assist
-                                    companies and employees to maintain
-                                    their business activities and reposition the function of out sourcing to its
-                                    original purpose to improve company
-                                    productivity. </p>
+                                <h1 class="title text-white" data-swiper-parallax="-500">Manpower Outsourcing</h1>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <p class="text-white" data-swiper-parallax="-1000" align="justify">Proven Force
+                                            Indonesia always
+                                            strives
+                                            hard to maintain the balance between company recruitment and the needs of
+                                            its
+                                            employees. Taking into account the PFI way of thinking and its intention to
+                                            assist
+                                            companies and employees to maintain
+                                            their business activities and reposition the function of out sourcing to its
+                                            original purpose to improve company
+                                            productivity. </p>
+                                    </div>
+                                </div>
                                 <a data-swiper-parallax="-1500" href="{{ route('user.manpower') }}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
@@ -70,19 +91,29 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/bannerss.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title text-dark" data-swiper-parallax="-500">Training & Development</h1>
-                                <p class="text-dark" data-swiper-parallax="-1000">Human resources have a very large role
-                                    in increasing productivity and maintaining the company's survival on an ongoing
-                                    basis. Good human resources will be able to run the company as optimally as possible
-                                    so that the company can continue to
-                                    grow and develop to strengthen the existing business. Reliable human resources will
-                                    be the driving force for a company
-                                    by optimizing all existing resources, including human resources related to
-                                    technology.</p>
+                                <h1 class="title text-white" data-swiper-parallax="-500">Training & Development</h1>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <p class="text-white" data-swiper-parallax="-1000" align="justify">Human
+                                            resources have a very
+                                            large
+                                            role
+                                            in increasing productivity and maintaining the company's survival on an
+                                            ongoing
+                                            basis. Good human resources will be able to run the company as optimally as
+                                            possible
+                                            so that the company can continue to
+                                            grow and develop to strengthen the existing business. Reliable human
+                                            resources will
+                                            be the driving force for a company
+                                            by optimizing all existing resources, including human resources related to
+                                            technology.</p>
+                                    </div>
+                                </div>
                                 <a data-swiper-parallax="-1500" href="{{ route('user.training') }}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
@@ -91,18 +122,27 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/banner1.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/energyBanner.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title text-dark" data-swiper-parallax="-500">Energy Efficiency</h1>
-                                <p class="text-dark" data-swiper-parallax="-1000">With the recent focus on Energy
-                                    Efficiency (EE) as a means to minimize the consumption of the power and reduce both
-                                    operational costs and environmental damage, such as pollution and climate change, PH
-                                    is committed to expanding it's
-                                    proven methodology to deliver productivity and savings improvements through projects
-                                    designed to impact the use and
-                                    consumption of energy, water and carbon.</p>
+                                <h1 class="title text-white" data-swiper-parallax="-500">Energy Efficiency</h1>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <p class="text-white" data-swiper-parallax="-1000">With the recent focus on
+                                            Energy
+                                            Efficiency (EE) as a means to minimize the consumption of the power and
+                                            reduce both
+                                            operational costs and environmental damage, such as pollution and climate
+                                            change, PH
+                                            is committed to expanding it's
+                                            proven methodology to deliver productivity and savings improvements through
+                                            projects
+                                            designed to impact the use and
+                                            consumption of energy, water and carbon.
+                                        </p>
+                                    </div>
+                                </div>
                                 <a data-swiper-parallax="-1500" href="{{ route('user.energy') }}"
                                     class="btn btn-primary">READ MORE <i
                                         class="fas fa-long-arrow-alt-right m-l15"></i></a>
@@ -157,7 +197,15 @@
                             <div class="counter-style-1 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="400">
                                 <div class="counter-num text-primary">
-                                    <h2 class="counter text-primary">35</h2>
+                                    <h2 class="counter text-primary">250</h2>
+                                    <small>+</small>
+                                </div>
+                                <h5 class="counter-text">Clients</h5>
+                            </div>
+                            <div class="counter-style-1 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800"
+                                data-aos-delay="400">
+                                <div class="counter-num text-primary">
+                                    <h2 class="counter text-primary">500</h2>
                                     <small>+</small>
                                 </div>
                                 <h5 class="counter-text">Projects Completed</h5>
@@ -165,7 +213,7 @@
                             <div class="counter-style-1 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="600">
                                 <div class="counter-num text-primary">
-                                    <h2 class="counter text-primary">1435</h2>
+                                    <h2 class="counter text-primary">3000</h2>
                                     <small>+</small>
                                 </div>
                                 <h5 class="counter-text">Employee</h5>
@@ -201,7 +249,7 @@
                                 data-aos-delay="400">
                                 <div class="dz-media">
                                     {{-- <img src="{{asset('assets_user/images/services/pic1.jpg')}}" alt=""> --}}
-                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    <img src="{{ asset('assets_user/banner/bannerss.jpg') }}" alt="">
                                 </div>
                                 <div class="dz-info" data-num="01">
                                     <div class="icon-lg m-b20 text-primary">
@@ -209,8 +257,8 @@
                                     </div>
                                     <h4 class="dz-title"><a href="{{route('user.consulting')}}">Consulting Services</a>
                                     </h4>
-                                    <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich
-                                        that capitalizes</p>
+                                    <p class="m-b0">Since its establishment in 2003 PT Proven Force Indonesia converted
+                                        opportunities into success story</p>
                                 </div>
                                 <div class="dz-bottom">
                                     <a class="btn btn-primary d-block" href="{{route('user.consulting')}}">READ MORE</a>
@@ -221,7 +269,7 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="600">
                                 <div class="dz-media">
-                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    <img src="{{ asset('assets_user/banner/bannerss.jpg') }}" alt="">
                                     {{-- <img src="{{asset('assets_user/images/services/pic2.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="02">
@@ -231,8 +279,9 @@
 
                                     <h4 class="dz-title"><a href="{{route('user.manpower')}}">Manpower Outsourcing</a>
                                     </h4>
-                                    <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich
-                                        that capitalizes</p>
+                                    <p class="m-b0">Proven Force Indonesia always strives hard to maintain the balance
+                                        between company recruitment and the needs of its
+                                        employees.</p>
                                 </div>
                                 <div class="dz-bottom">
                                     <a class="btn btn-primary d-block" href="{{route('user.manpower')}}">READ MORE</a>
@@ -243,7 +292,7 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    <img src="{{ asset('assets_user/banner/bannerss.jpg') }}" alt="">
                                     {{-- <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="03">
@@ -253,8 +302,9 @@
 
                                     <h4 class="dz-title"><a href="{{route('user.training')}}">Training & Development</a>
                                     </h4>
-                                    <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich
-                                        that capitalizes</p>
+                                    <p class="m-b0">Creating and delivering training programs have a high degree of
+                                        difficulty, especially if a client expects the best
+                                        result from each experience.</p>
                                 </div>
                                 <div class="dz-bottom">
                                     <a class="btn btn-primary d-block" href="{{route('user.training')}}">READ MORE</a>
@@ -265,7 +315,7 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="https://placeimg.com/450/195/tech" alt="">
+                                    <img src="{{ asset('assets_user/banner/energyBanner.jpg') }}" alt="">
                                     {{-- <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="04">
@@ -274,8 +324,8 @@
                                     </div>
 
                                     <h4 class="dz-title"><a href="{{route('user.energy')}}">Energy Efficiency</a></h4>
-                                    <p class="m-b0">Progressively maintain extensive intermediaries via extensible nich
-                                        that capitalizes</p>
+                                    <p class="m-b0">Energy Efficiency (EE) as a means to minimize power consumption and
+                                        reduce operational costs and environmental damage..</p>
                                 </div>
                                 <div class="dz-bottom">
                                     <a class="btn btn-primary d-block" href="{{route('user.energy')}}">READ MORE</a>
@@ -292,7 +342,7 @@
         </div>
     </section>
 
-    <section class="content-inner-1">
+    {{-- <section class="content-inner-1">
         <div class="container">
             <div class="swiper-container testimonial-swiper2">
                 <div class="swiper-wrapper">
@@ -346,7 +396,6 @@
                         <div class="testimonial-2 aos-item" data-aos="fade-up" data-aos-duration="800"
                             data-aos-delay="600">
                             <div class="testimonial-pic">
-                                {{-- pic3.jpg --}}
                                 <img src="{{asset('assets_user/images/testimonials/large/testimonial.png')}}" alt="">
                             </div>
                             <div class="testimonial-info">
@@ -371,7 +420,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="content-inner-2">
         <div class="container-fluid">
@@ -382,44 +431,45 @@
             </div>
             <div class="row sp15 aos-item" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
                 <div class="col-xl-6 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
+                    {{-- image-tooltip-effect --}}
+                    <div class="dz-box style-2">
                         {{-- {{asset('assets_user/directImage/1.jpg')}} assets_user/images/work/work-2/pic1.jpg --}}
-                        <a href="portfolio-details.html" class="dz-media height-md"
+                        <a href="#" class="dz-media height-md"
                             style="background-image:url('assets_user/portfolio/port2.jpg');"></a>
-                        <div class="dz-info">
+                        {{-- <div class="dz-info">
                             <h4 class="title m-b10">Flexible Manufacturing</h4>
-                            {{-- <h6 class="sub-title text-primary m-b0">150 projects</h6> --}}
-                        </div>
+                            <h6 class="sub-title text-primary m-b0">150 projects</h6>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
+                    <div class="dz-box style-2">
+                        <a href="#" class="dz-media height-md"
                             style="background-image:url('assets_user/portfolio/port1.jpg');"></a>
-                        <div class="dz-info">
+                        {{-- <div class="dz-info">
                             <h4 class="title m-b10">Power & Energy</h4>
-                            {{-- <h6 class="sub-title text-primary m-b0">100 projects</h6> --}}
-                        </div>
+                            <h6 class="sub-title text-primary m-b0">100 projects</h6>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
+                    <div class="dz-box style-2">
+                        <a href="#" class="dz-media height-md"
                             style="background-image:url('assets_user/portfolio/port3.jpg');"></a>
-                        <div class="dz-info">
+                        {{-- <div class="dz-info">
                             <h4 class="title m-b10">Gathering Balai Kartini</h4>
-                            {{-- <h6 class="sub-title text-primary m-b0">120 projects</h6> --}}
-                        </div>
+                            <h6 class="sub-title text-primary m-b0">120 projects</h6>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 m-b15">
-                    <div class="image-tooltip-effect dz-box style-2">
-                        <a href="portfolio-details.html" class="dz-media height-md"
+                    <div class="dz-box style-2">
+                        <a href="#" class="dz-media height-md"
                             style="background-image:url('assets_user/portfolio/port1.jpg');"></a>
-                        <div class="dz-info">
+                        {{-- <div class="dz-info">
                             <h4 class="title m-b10">Gathering Balai Kartini</h4>
-                            {{-- <h6 class="sub-title text-primary m-b0">50 projects</h6> --}}
-                        </div>
+                            <h6 class="sub-title text-primary m-b0">50 projects</h6>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -461,7 +511,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="600">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/directImage/1.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/tri.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -513,7 +563,7 @@
                                 </div>
                                 <div class="dz-content">
                                     <h3 class="dz-name">Ervin Priambodo</h3>
-                                    <h6 class="dz-position text-primary">Associate Director of Consulting</h6>
+                                    <h6 class="dz-position text-primary">Director of Training</h6>
                                 </div>
                             </div>
                         </div>
@@ -561,7 +611,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/directImage/1.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/david.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>

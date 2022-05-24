@@ -8,7 +8,7 @@
             </div>
 
             <div class="logo-header mostion logo-white">
-                <a href=""><img src="{{asset('assets_user/images/logo/logo-pfi.png')}}" style="max-width: 115px"
+                <a href=""><img src="{{asset('assets_user/images/logo/pfiBlueWhite.png')}}" style="max-width: 115px"
                         alt=""></a>
             </div>
 

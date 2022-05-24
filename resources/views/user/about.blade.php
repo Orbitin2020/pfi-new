@@ -176,55 +176,43 @@
     <section class="content-inner-2 bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 m-b30">
+
+                <div class="col-lg-4 col-md-6 m-b30">
                     <div class="text-center">
-                        <svg class="radial-progress m-b20" data-percentage="43" viewBox="0 0 80 80">
+                        <svg class="radial-progress m-b20" data-percentage="100" viewBox="0 0 80 80">
                             <circle class="basic-circle" cx="40" cy="40" r="35"></circle>
                             <circle class="incomplete" cx="40" cy="40" r="35"></circle>
                             <circle class="complete" cx="40" cy="40" r="35"
                                 style="stroke-dashoffset: 39.58406743523136;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">43%</text>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">250+</text>
                         </svg>
-                        <h3 class="title m-b0">All Maintenance</h3>
+                        <h3 class="title m-b0">Clients</h3>
                         <p class="sub-title m-b0">Construction Simulator</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 m-b30">
+                <div class="col-lg-4 col-md-6 m-b30">
                     <div class="text-center">
-                        <svg class="radial-progress m-b20" data-percentage="73" viewBox="0 0 80 80">
+                        <svg class="radial-progress m-b20" data-percentage="100" viewBox="0 0 80 80">
                             <circle class="basic-circle" cx="40" cy="40" r="35"></circle>
                             <circle class="incomplete" cx="40" cy="40" r="35"></circle>
                             <circle class="complete" cx="40" cy="40" r="35"
                                 style="stroke-dashoffset: 39.58406743523136;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">73%</text>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">500+</text>
                         </svg>
                         <h3 class="title m-b0">Projects Completed</h3>
                         <p class="sub-title m-b0">Construction Simulator</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 m-b30">
+                <div class="col-lg-4 col-md-6 m-b30">
                     <div class="text-center">
-                        <svg class="radial-progress m-b20" data-percentage="67" viewBox="0 0 80 80">
+                        <svg class="radial-progress m-b20" data-percentage="100" viewBox="0 0 80 80">
                             <circle class="basic-circle" cx="40" cy="40" r="35"></circle>
                             <circle class="incomplete" cx="40" cy="40" r="35"></circle>
                             <circle class="complete" cx="40" cy="40" r="35"
                                 style="stroke-dashoffset: 39.58406743523136;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">67%</text>
+                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">3000+</text>
                         </svg>
-                        <h3 class="title m-b0">Work Employed</h3>
-                        <p class="sub-title m-b0">Construction Simulator</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 m-b30">
-                    <div class="text-center">
-                        <svg class="radial-progress m-b20" data-percentage="95" viewBox="0 0 80 80">
-                            <circle class="basic-circle" cx="40" cy="40" r="35"></circle>
-                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                            <circle class="complete" cx="40" cy="40" r="35"
-                                style="stroke-dashoffset: 39.58406743523136;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">95%</text>
-                        </svg>
-                        <h3 class="title m-b0">Work facilities</h3>
+                        <h3 class="title m-b0">Employee</h3>
                         <p class="sub-title m-b0">Construction Simulator</p>
                     </div>
                 </div>
@@ -245,7 +233,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="400">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic2.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/pakjimmy.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -265,7 +253,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="600">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic2.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/tri.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -383,7 +371,7 @@
                             <div class="dz-team style-1 text-center m-b10 aos-item" data-aos="fade-up"
                                 data-aos-duration="800" data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{asset('assets_user/images/team/pic3.jpg')}}" alt="">
+                                    <img src="{{asset('assets_user/directImage/david.jpg')}}" alt="">
                                     <ul class="team-social">
                                         <li><a href="https://twitter.com/" class="twitter"><i
                                                     class="fab fa-twitter"></i></a></li>
@@ -410,7 +398,7 @@
     </section>
 
     <!-- Clients Swiper -->
-    <section class="section-full content-inner-5">
+    {{-- <section class="section-full content-inner-5">
         <div class="container">
             <div class="swiper-container clients-swiper">
                 <div class="swiper-wrapper">
@@ -426,7 +414,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 </div>

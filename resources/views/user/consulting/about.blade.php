@@ -29,7 +29,7 @@
             <div class="row about-style14">
                 <div class="col-lg-6 m-b30">
                     <div class="dz-media">
-                        <img src="{{asset('assets_user/images/about/productivity.png')}}" alt="">
+                        <img src="{{asset('assets_user/images/about/productivity.png')}}" alt="Consulting Service">
                     </div>
                 </div>
                 <div class="col-lg-6 m-b30 align-self-center">
