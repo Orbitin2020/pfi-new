@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/bannerss.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/bannerTraining.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
@@ -129,7 +129,8 @@
                                 <h1 class="title text-white" data-swiper-parallax="-500">Energy Efficiency</h1>
                                 <div class="row">
                                     <div class="col-lg-8">
-                                        <p class="text-white" data-swiper-parallax="-1000">With the recent focus on
+                                        <p class="text-white" data-swiper-parallax="-1000" align="justify">With the
+                                            recent focus on
                                             Energy
                                             Efficiency (EE) as a means to minimize the consumption of the power and
                                             reduce both
@@ -218,14 +219,6 @@
                                 </div>
                                 <h5 class="counter-text">Employee</h5>
                             </div>
-                            {{-- <div class="counter-style-1 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800"
-                                data-aos-delay="800">
-                                <div class="counter-num text-primary">
-                                    <h2 class="counter text-primary">750</h2>
-                                    <small>+</small>
-                                </div>
-                                <h5 class="counter-text">Work facilities</h5>
-                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -249,7 +242,7 @@
                                 data-aos-delay="400">
                                 <div class="dz-media">
                                     {{-- <img src="{{asset('assets_user/images/services/pic1.jpg')}}" alt=""> --}}
-                                    <img src="{{ asset('assets_user/banner/bannerss.jpg') }}" alt="">
+                                    <img src="{{ asset('assets_user/banner/bannerConsulting.jpg') }}" alt="">
                                 </div>
                                 <div class="dz-info" data-num="01">
                                     <div class="icon-lg m-b20 text-primary">
@@ -292,7 +285,7 @@
                             <div class="content-box overlay-shine aos-item" data-aos="fade-up" data-aos-duration="800"
                                 data-aos-delay="800">
                                 <div class="dz-media">
-                                    <img src="{{ asset('assets_user/banner/bannerss.jpg') }}" alt="">
+                                    <img src="{{ asset('assets_user/banner/bannerTraining.jpg') }}" alt="">
                                     {{-- <img src="{{asset('assets_user/images/services/pic3.jpg')}}" alt=""> --}}
                                 </div>
                                 <div class="dz-info" data-num="03">

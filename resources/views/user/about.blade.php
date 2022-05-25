@@ -133,7 +133,9 @@
                         <div class="inner-content">
                             <span>SEP 5th</span>
                             <h4 class="m-b30">First Product Launch</h4>
-                            <img src="images/about/about35.jpg" alt="">
+                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
+                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
+                            {{-- <img src="{{ asset('assets_user/images/about/about35.jpg') }}" alt=""> --}}
                         </div>
                     </div>
                 </div>
@@ -187,7 +189,7 @@
                             <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">250+</text>
                         </svg>
                         <h3 class="title m-b0">Clients</h3>
-                        <p class="sub-title m-b0">Construction Simulator</p>
+                        {{-- <p class="sub-title m-b0">Construction Simulator</p> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 m-b30">
@@ -200,7 +202,7 @@
                             <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">500+</text>
                         </svg>
                         <h3 class="title m-b0">Projects Completed</h3>
-                        <p class="sub-title m-b0">Construction Simulator</p>
+                        {{-- <p class="sub-title m-b0">Construction Simulator</p> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 m-b30">
@@ -213,7 +215,7 @@
                             <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">3000+</text>
                         </svg>
                         <h3 class="title m-b0">Employee</h3>
-                        <p class="sub-title m-b0">Construction Simulator</p>
+                        {{-- <p class="sub-title m-b0">Construction Simulator</p> --}}
                     </div>
                 </div>
             </div>
@@ -323,7 +325,7 @@
                                 </div>
                                 <div class="dz-content">
                                     <h3 class="dz-name">Ervin Priambodo</h3>
-                                    <h6 class="dz-position text-primary">Associate Director of Consulting</h6>
+                                    <h6 class="dz-position text-primary">Director of Training</h6>
                                 </div>
                             </div>
                         </div>

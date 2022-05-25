@@ -3,8 +3,9 @@
 <div class="page-content bg-white">
 
     <!-- Banner  -->
+    {{-- assets_user/images/bnr/training2.png --}}
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
-        style="background-image: url(assets_user/images/bnr/training2.png);">
+        style="background-image: url(assets_user/images/background/bgAbout.png);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>About Training & Development Service</h1>

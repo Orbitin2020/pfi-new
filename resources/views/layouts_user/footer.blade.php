@@ -40,8 +40,8 @@
                         <ul>
                             <li><a href="{{route('user.consulting')}}">Consulting</a></li>
                             <li><a href="{{ route('user.manpower') }}">Manpower Outsourcing</a></li>
-                            <li><a href="javascript:void(0);">Training & Development</a></li>
-                            <li><a href="javascript:void(0);">Energy Efficiency</a></li>
+                            <li><a href="{{ route('user.training') }}">Training & Development</a></li>
+                            <li><a href="{{ route('user.energy') }}">Energy Efficiency</a></li>
                         </ul>
                     </div>
                 </div>
