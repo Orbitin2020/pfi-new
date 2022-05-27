@@ -5,7 +5,7 @@
     <!-- Banner  -->
     {{-- assets_user/images/bnr/bnr1.jpg --}}
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
-        style="background-image: url(assets_user/images/background/bgAbout.png);">
+        style="background-image: url(assets_user/images/background/bannerContact.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>Contact Us</h1>

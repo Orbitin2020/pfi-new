@@ -21009,8 +21009,8 @@ pre {
     position: relative;
     display: flex;
     flex-flow: wrap;
-    padding-top: 150px;
-    padding-bottom: 70px; }
+    padding-top: 80px;
+    padding-bottom: 5px; }
     .history-wrapper .history-wrapper-bx .year {
       height: 100px;
       width: 100px;

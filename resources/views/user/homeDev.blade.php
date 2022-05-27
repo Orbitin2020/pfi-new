@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/bannerManpower.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/manpowerBanner.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
