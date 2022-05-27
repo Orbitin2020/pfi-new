@@ -3,9 +3,8 @@
 <div class="page-content bg-white">
 
     <!-- Banner  -->
-    {{-- Image Banner : assets_user/images/bnr/bnr1.jpg --}}
     <div class="dz-bnr-inr dz-bnr-inr-sm overlay-black-middle text-center"
-        style="background-image: url(assets_user/images/background/bgAbout.png);">
+        style="background-image: url(assets_user/images/background/bannerAboutUs.jpg);">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>About Us</h1>
@@ -57,42 +56,8 @@
                     <h3 class="title">MISSION</h3>
                     <p class="text-dark"><strong>Facilitating organizations to run their operations more
                             efficiently and effectively through improved management capability.</strong></p>
-                    {{-- <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="title">VISION</h3>
-                            <p class="text-dark"><strong>Become the leader in the facilitation of profitability
-                                    improvement and performance enhancement for all types of organizations.</strong></p>
-                        </div>
-                        <div class="col-md-6">
-                            <h3 class="title">VISION</h3>
-                            <p class="text-dark"><strong>Become the leader in the facilitation of profitability
-                                    improvement and performance enhancement for all types of organizations.</strong></p>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
-            {{-- <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-head style-1">
-                        <h3 class="title m-b30">VISION</h3>
-                        <div class="exp-row">
-                            <h5 class="m-b30" align="justify">Become the leader in the facilitation of profitability
-                                improvement and performance enhancement for all types of organizations</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-head style-1">
-                        <h3 class="title m-b30">MISSION</h3>
-                        <div class="exp-row">
-                            <h5 class="m-b30" align="justify">Facilitating organizations to run their operations more
-                                efficiently and effectively through improved management capability</h5>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-
-
         </div>
     </section>
 
@@ -104,57 +69,116 @@
             </div>
             <div class="history-wrapper">
                 <div class="history-wrapper-bx">
-                    <div class="year">2022</div>
+                    <div class="year"><strong>2003</strong></div>
                     <div class="history-box">
                         <div class="inner-content">
-                            <span>SEP 5th</span>
-                            <h4>Founded In 2010</h4>
-                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
-                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
+                            <p class="mb-0">Proven Force Indonesia (PFI) was established as the consulting arm of
+                                President University Foundation with the support
+                                of Jababeka Group.</p>
                         </div>
                     </div>
                     <div class="history-box">
                         <div class="inner-content">
-                            <span>SEP 5th</span>
-                            <h4>First 10 Year Anniversary</h4>
-                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
-                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
-                        </div>
-                    </div>
-                    <div class="history-box">
-                        <div class="inner-content">
-                            <span>SEP 5th</span>
-                            <h4>Founded In 2010</h4>
-                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
-                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
-                        </div>
-                    </div>
-                    <div class="history-box">
-                        <div class="inner-content">
-                            <span>SEP 5th</span>
-                            <h4 class="m-b30">First Product Launch</h4>
-                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
-                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
-                            {{-- <img src="{{ asset('assets_user/images/about/about35.jpg') }}" alt=""> --}}
+                            <p class="mb-0">PFI started its operations in Productivity Consulting.</p>
                         </div>
                     </div>
                 </div>
                 <div class="history-wrapper-bx">
-                    <div class="year">2020</div>
+                    <div class="year"><strong>2005</strong></div>
                     <div class="history-box">
                         <div class="inner-content">
-                            <span>SEP 5th</span>
-                            <h4>Founded In 2022</h4>
-                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
-                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
+                            <p class="mb-0">PFI established its own office in Cikarang, West Java.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2006</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PT. Proven Force Indonesia was established as the new entity of the
+                                organization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2007</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">Operations transitioned from under President University Foundation to PT.
+                                Proven Force Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2008</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PFI started its operations in Manpower Outsourcing, and set up a branch in
+                                Bandung.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2009</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PFI set up a branch office in Lampung.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2012</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PT. PFI Global Manpower was established as a subsidiary of PFI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2014</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PFI established its operations in Energy Efficiency.</p>
                         </div>
                     </div>
                     <div class="history-box">
                         <div class="inner-content">
-                            <span>SEP 5th</span>
-                            <h4>First 21 Year Anniversary</h4>
-                            <p class="mb-0">Nullam lacinia mauris orci, ac auctor nulla eleifend sit amet. Ut in tempor
-                                ipsum. Sed aliquam diam massa, ac ullamcorper odio pretium at. Donec eu elit nisl.</p>
+                            <p class="mb-0">PFI set up a branch office in Gunung Putri, West Java.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2016</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PFI set up a branch office in Sentul and Sukabumi, West Java.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2017</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PFI moved its head office to SOHO Building, Jakarta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2019</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PT. Jimmy Gani Korpora was established, as the future holding company of
+                                PFI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-wrapper-bx">
+                    <div class="year"><strong>2020</strong></div>
+                    <div class="history-box">
+                        <div class="inner-content">
+                            <p class="mb-0">PT. Orbitin Kebanggaan Indonesia was established by PT. Jimmy Gani Korpora
+                                as a joint venture with PT. Info Media
+                                Digital (PT. Tempo Inti Media Tbk. Group).</p>
                         </div>
                     </div>
                 </div>
@@ -163,7 +187,7 @@
     </section>
 
     <section class="content-inner-4 overlay-black-middle"
-        style="background-image:url('assets_user/images/about/ourService.png');background-size: cover;background-position: center;">
+        style="background-image:url('assets_user/images/background/imageAbout.jpg');background-size: cover;background-position: center;">
         <div class="container">
             <div class="section-head style-1 text-center">
                 <h6 class="sub-title text-primary">Our Experts</h6>
@@ -189,7 +213,6 @@
                             <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">250+</text>
                         </svg>
                         <h3 class="title m-b0">Clients</h3>
-                        {{-- <p class="sub-title m-b0">Construction Simulator</p> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 m-b30">
@@ -202,7 +225,6 @@
                             <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">500+</text>
                         </svg>
                         <h3 class="title m-b0">Projects Completed</h3>
-                        {{-- <p class="sub-title m-b0">Construction Simulator</p> --}}
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 m-b30">
@@ -215,7 +237,6 @@
                             <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">3000+</text>
                         </svg>
                         <h3 class="title m-b0">Employee</h3>
-                        {{-- <p class="sub-title m-b0">Construction Simulator</p> --}}
                     </div>
                 </div>
             </div>

@@ -63,13 +63,13 @@
                     </div>
                 </div>
                 <div class="swiper-slide"
-                    style="background-image: url(assets_user/banner/bannerss.jpg); background-size: cover;">
+                    style="background-image: url(assets_user/banner/bannerManpower.jpg); background-size: cover;">
                     <div class="banner-content container">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="title text-white" data-swiper-parallax="-500">Manpower Outsourcing</h1>
+                                <h1 class="title text-white" data-swiper-parallax="-500">Manpower <br> Outsourcing</h1>
                                 <div class="row">
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <p class="text-white" data-swiper-parallax="-1000" align="justify">Proven Force
                                             Indonesia always
                                             strives
